@@ -134,7 +134,8 @@
   .doc-footer a:hover { color: var(--accent); }
 
   /* ── LANG VISIBILITY ── */
-  [data-vi] { display: none; }
+  body:not(.vi) [data-vi] { display: none; }
+  body.vi [data-en] { display: none; }
 
   /* ── FOCUS ── */
   :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -156,17 +157,17 @@
 <main class="doc">
 
   <p class="doc-eyebrow" data-en>Legal · Bước Theo Chân Chúa</p>
-  <p class="doc-eyebrow" data-vi style="display:none">Pháp lý · Bước Theo Chân Chúa</p>
+  <p class="doc-eyebrow" data-vi>Pháp lý · Bước Theo Chân Chúa</p>
 
   <h1 class="doc-title" data-en>Terms of Use</h1>
-  <h1 class="doc-title" data-vi style="display:none">Điều khoản Sử dụng</h1>
+  <h1 class="doc-title" data-vi>Điều khoản Sử dụng</h1>
 
   <p class="doc-meta" data-en>Effective June 29, 2026 &nbsp;·&nbsp; Last updated June 29, 2026</p>
-  <p class="doc-meta" data-vi style="display:none">Có hiệu lực 29/06/2026 &nbsp;·&nbsp; Cập nhật lần cuối 29/06/2026</p>
+  <p class="doc-meta" data-vi>Có hiệu lực 29/06/2026 &nbsp;·&nbsp; Cập nhật lần cuối 29/06/2026</p>
 
   <div class="preamble">
     <p data-en>By downloading or using Bước Theo Chân Chúa you agree to these Terms. Please read them carefully before using the app.</p>
-    <p data-vi style="display:none">Bằng cách tải xuống hoặc sử dụng Bước Theo Chân Chúa, bạn đồng ý với các Điều khoản này. Vui lòng đọc kỹ trước khi sử dụng ứng dụng.</p>
+    <p data-vi>Bằng cách tải xuống hoặc sử dụng Bước Theo Chân Chúa, bạn đồng ý với các Điều khoản này. Vui lòng đọc kỹ trước khi sử dụng ứng dụng.</p>
   </div>
 
   <!-- § 1 -->
@@ -174,10 +175,10 @@
     <div class="section-label">
       <span class="section-num">§ 1</span>
       <h2 class="section-title" data-en>Acceptance of Terms</h2>
-      <h2 class="section-title" data-vi style="display:none">Chấp nhận Điều khoản</h2>
+      <h2 class="section-title" data-vi>Chấp nhận Điều khoản</h2>
     </div>
     <p data-en>These Terms of Use ("Terms") govern your access to and use of Bước Theo Chân Chúa ("App"), a mobile application for church attendance check-in and community engagement. By creating an account or using the App, you confirm that you have read, understood, and agree to be bound by these Terms.</p>
-    <p data-vi style="display:none">Các Điều khoản Sử dụng này điều chỉnh quyền truy cập và sử dụng Bước Theo Chân Chúa — ứng dụng di động dành cho điểm danh nhà thờ và gắn kết cộng đồng. Bằng cách tạo tài khoản hoặc sử dụng Ứng dụng, bạn xác nhận đã đọc, hiểu và đồng ý bị ràng buộc bởi các Điều khoản này.</p>
+    <p data-vi>Các Điều khoản Sử dụng này điều chỉnh quyền truy cập và sử dụng Bước Theo Chân Chúa — ứng dụng di động dành cho điểm danh nhà thờ và gắn kết cộng đồng. Bằng cách tạo tài khoản hoặc sử dụng Ứng dụng, bạn xác nhận đã đọc, hiểu và đồng ý bị ràng buộc bởi các Điều khoản này.</p>
   </section>
 
   <!-- § 2 -->
@@ -185,21 +186,21 @@
     <div class="section-label">
       <span class="section-num">§ 2</span>
       <h2 class="section-title" data-en>Description of Service</h2>
-      <h2 class="section-title" data-vi style="display:none">Mô tả Dịch vụ</h2>
+      <h2 class="section-title" data-vi>Mô tả Dịch vụ</h2>
     </div>
     <p data-en>Bước Theo Chân Chúa provides the following features:</p>
-    <p data-vi style="display:none">Bước Theo Chân Chúa cung cấp các tính năng sau:</p>
+    <p data-vi>Bước Theo Chân Chúa cung cấp các tính năng sau:</p>
     <ul>
       <li data-en><strong>GPS Check-in</strong> — Verify attendance at church locations using your device's GPS.</li>
-      <li data-vi style="display:none"><strong>Điểm danh GPS</strong> — Xác minh sự tham dự tại địa điểm nhà thờ thông qua GPS của thiết bị.</li>
+      <li data-vi><strong>Điểm danh GPS</strong> — Xác minh sự tham dự tại địa điểm nhà thờ thông qua GPS của thiết bị.</li>
       <li data-en><strong>Leaderboard</strong> — View community attendance rankings among participating members.</li>
-      <li data-vi style="display:none"><strong>Bảng xếp hạng</strong> — Xem bảng xếp hạng tham dự cộng đồng giữa các thành viên.</li>
+      <li data-vi><strong>Bảng xếp hạng</strong> — Xem bảng xếp hạng tham dự cộng đồng giữa các thành viên.</li>
       <li data-en><strong>Missions &amp; Achievements</strong> — Complete faith-based missions to earn points and unlock achievements.</li>
-      <li data-vi style="display:none"><strong>Nhiệm vụ và Thành tích</strong> — Hoàn thành các nhiệm vụ để tích điểm và mở khóa thành tích.</li>
+      <li data-vi><strong>Nhiệm vụ và Thành tích</strong> — Hoàn thành các nhiệm vụ để tích điểm và mở khóa thành tích.</li>
       <li data-en><strong>Attendance Streaks</strong> — Track and celebrate consecutive attendance records.</li>
-      <li data-vi style="display:none"><strong>Chuỗi tham dự</strong> — Theo dõi và ghi nhận chuỗi tham dự liên tiếp.</li>
+      <li data-vi><strong>Chuỗi tham dự</strong> — Theo dõi và ghi nhận chuỗi tham dự liên tiếp.</li>
       <li data-en><strong>Church Directory</strong> — Browse and find churches nearby.</li>
-      <li data-vi style="display:none"><strong>Danh sách nhà thờ</strong> — Tìm kiếm và khám phá các nhà thờ gần bạn.</li>
+      <li data-vi><strong>Danh sách nhà thờ</strong> — Tìm kiếm và khám phá các nhà thờ gần bạn.</li>
     </ul>
   </section>
 
@@ -208,22 +209,22 @@
     <div class="section-label">
       <span class="section-num">§ 3</span>
       <h2 class="section-title" data-en>User Accounts</h2>
-      <h2 class="section-title" data-vi style="display:none">Tài khoản Người dùng</h2>
+      <h2 class="section-title" data-vi>Tài khoản Người dùng</h2>
     </div>
     <p data-en>To use Bước Theo Chân Chúa you must register for an account. You agree to:</p>
-    <p data-vi style="display:none">Để sử dụng Bước Theo Chân Chúa bạn phải đăng ký tài khoản. Bạn đồng ý:</p>
+    <p data-vi>Để sử dụng Bước Theo Chân Chúa bạn phải đăng ký tài khoản. Bạn đồng ý:</p>
     <ul>
       <li data-en>Provide accurate, current, and complete registration information.</li>
-      <li data-vi style="display:none">Cung cấp thông tin đăng ký chính xác, cập nhật và đầy đủ.</li>
+      <li data-vi>Cung cấp thông tin đăng ký chính xác, cập nhật và đầy đủ.</li>
       <li data-en>Keep your password confidential and not share it with others.</li>
-      <li data-vi style="display:none">Giữ bí mật mật khẩu và không chia sẻ với người khác.</li>
+      <li data-vi>Giữ bí mật mật khẩu và không chia sẻ với người khác.</li>
       <li data-en>Notify us immediately of any unauthorized use of your account.</li>
-      <li data-vi style="display:none">Thông báo ngay nếu phát hiện truy cập trái phép vào tài khoản của bạn.</li>
+      <li data-vi>Thông báo ngay nếu phát hiện truy cập trái phép vào tài khoản của bạn.</li>
       <li data-en>Accept responsibility for all activity that occurs under your account.</li>
-      <li data-vi style="display:none">Chịu trách nhiệm về tất cả hoạt động diễn ra dưới tài khoản của bạn.</li>
+      <li data-vi>Chịu trách nhiệm về tất cả hoạt động diễn ra dưới tài khoản của bạn.</li>
     </ul>
     <p data-en>You must be at least 13 years of age to create an account. Users under 18 must have parental or guardian consent.</p>
-    <p data-vi style="display:none">Bạn phải ít nhất 13 tuổi để tạo tài khoản. Người dùng dưới 18 tuổi phải có sự đồng ý của cha mẹ hoặc người giám hộ.</p>
+    <p data-vi>Bạn phải ít nhất 13 tuổi để tạo tài khoản. Người dùng dưới 18 tuổi phải có sự đồng ý của cha mẹ hoặc người giám hộ.</p>
   </section>
 
   <!-- § 4 -->
@@ -231,17 +232,17 @@
     <div class="section-label">
       <span class="section-num">§ 4</span>
       <h2 class="section-title" data-en>Location Services</h2>
-      <h2 class="section-title" data-vi style="display:none">Dịch vụ Vị trí</h2>
+      <h2 class="section-title" data-vi>Dịch vụ Vị trí</h2>
     </div>
     <p data-en>The check-in feature requires access to your device's GPS. By using it you agree that:</p>
-    <p data-vi style="display:none">Tính năng điểm danh yêu cầu quyền truy cập GPS của thiết bị. Khi sử dụng tính năng này, bạn đồng ý rằng:</p>
+    <p data-vi>Tính năng điểm danh yêu cầu quyền truy cập GPS của thiết bị. Khi sử dụng tính năng này, bạn đồng ý rằng:</p>
     <ul>
       <li data-en>Location data is used solely to verify your physical presence at a church venue.</li>
-      <li data-vi style="display:none">Dữ liệu vị trí chỉ dùng để xác minh sự hiện diện thực tế tại địa điểm nhà thờ.</li>
+      <li data-vi>Dữ liệu vị trí chỉ dùng để xác minh sự hiện diện thực tế tại địa điểm nhà thờ.</li>
       <li data-en>Location is accessed only at the moment of check-in — the App does not track you in the background.</li>
-      <li data-vi style="display:none">Vị trí chỉ được truy cập tại thời điểm điểm danh — Ứng dụng không theo dõi bạn nền (background).</li>
+      <li data-vi>Vị trí chỉ được truy cập tại thời điểm điểm danh — Ứng dụng không theo dõi bạn nền (background).</li>
       <li data-en>Spoofing or faking your GPS location to fraudulently check in is a violation of these Terms and may result in account suspension.</li>
-      <li data-vi style="display:none">Giả mạo vị trí GPS để điểm danh gian lận là vi phạm Điều khoản và có thể bị khóa tài khoản.</li>
+      <li data-vi>Giả mạo vị trí GPS để điểm danh gian lận là vi phạm Điều khoản và có thể bị khóa tài khoản.</li>
     </ul>
   </section>
 
@@ -250,10 +251,10 @@
     <div class="section-label">
       <span class="section-num">§ 5</span>
       <h2 class="section-title" data-en>Gamification &amp; Points</h2>
-      <h2 class="section-title" data-vi style="display:none">Điểm thưởng và Gamification</h2>
+      <h2 class="section-title" data-vi>Điểm thưởng và Gamification</h2>
     </div>
     <p data-en>Points, achievements, streaks, and leaderboard rankings have no monetary value and cannot be exchanged for cash or goods. We reserve the right to adjust point values, mission criteria, or achievement rules at any time, and to remove points earned through fraudulent means.</p>
-    <p data-vi style="display:none">Điểm thưởng, thành tích, chuỗi tham dự và thứ hạng không có giá trị tiền tệ và không thể đổi lấy tiền hoặc hàng hóa. Chúng tôi có quyền điều chỉnh giá trị điểm, tiêu chí nhiệm vụ hoặc quy tắc thành tích bất kỳ lúc nào, và xóa điểm thu được qua gian lận.</p>
+    <p data-vi>Điểm thưởng, thành tích, chuỗi tham dự và thứ hạng không có giá trị tiền tệ và không thể đổi lấy tiền hoặc hàng hóa. Chúng tôi có quyền điều chỉnh giá trị điểm, tiêu chí nhiệm vụ hoặc quy tắc thành tích bất kỳ lúc nào, và xóa điểm thu được qua gian lận.</p>
   </section>
 
   <!-- § 6 -->
@@ -261,21 +262,21 @@
     <div class="section-label">
       <span class="section-num">§ 6</span>
       <h2 class="section-title" data-en>Acceptable Use</h2>
-      <h2 class="section-title" data-vi style="display:none">Sử dụng Hợp lệ</h2>
+      <h2 class="section-title" data-vi>Sử dụng Hợp lệ</h2>
     </div>
     <p data-en>You agree not to:</p>
-    <p data-vi style="display:none">Bạn đồng ý không:</p>
+    <p data-vi>Bạn đồng ý không:</p>
     <ul>
       <li data-en>Use the App for any unlawful purpose.</li>
-      <li data-vi style="display:none">Sử dụng Ứng dụng cho mục đích bất hợp pháp.</li>
+      <li data-vi>Sử dụng Ứng dụng cho mục đích bất hợp pháp.</li>
       <li data-en>Attempt to gain unauthorized access to other accounts or our servers.</li>
-      <li data-vi style="display:none">Cố truy cập trái phép vào tài khoản người dùng khác hoặc máy chủ của chúng tôi.</li>
+      <li data-vi>Cố truy cập trái phép vào tài khoản người dùng khác hoặc máy chủ của chúng tôi.</li>
       <li data-en>Use automated scripts, bots, or third-party tools to manipulate check-ins, points, or rankings.</li>
-      <li data-vi style="display:none">Dùng script tự động, bot hoặc công cụ bên thứ ba để thao túng điểm danh, điểm số hoặc xếp hạng.</li>
+      <li data-vi>Dùng script tự động, bot hoặc công cụ bên thứ ba để thao túng điểm danh, điểm số hoặc xếp hạng.</li>
       <li data-en>Harass or harm other users through any in-app feature.</li>
-      <li data-vi style="display:none">Quấy rối hoặc gây hại cho người dùng khác qua bất kỳ tính năng nào.</li>
+      <li data-vi>Quấy rối hoặc gây hại cho người dùng khác qua bất kỳ tính năng nào.</li>
       <li data-en>Reverse-engineer or attempt to extract the source code of the App.</li>
-      <li data-vi style="display:none">Dịch ngược hoặc cố gắng trích xuất mã nguồn của Ứng dụng.</li>
+      <li data-vi>Dịch ngược hoặc cố gắng trích xuất mã nguồn của Ứng dụng.</li>
     </ul>
   </section>
 
@@ -284,10 +285,10 @@
     <div class="section-label">
       <span class="section-num">§ 7</span>
       <h2 class="section-title" data-en>Church Organizations</h2>
-      <h2 class="section-title" data-vi style="display:none">Các Tổ chức Nhà thờ</h2>
+      <h2 class="section-title" data-vi>Các Tổ chức Nhà thờ</h2>
     </div>
     <p data-en>Churches listed on the App are independent organizations. Bước Theo Chân Chúa is not affiliated with, endorsed by, or responsible for any church, its teachings, events, or activities. We list churches for directory and check-in purposes only.</p>
-    <p data-vi style="display:none">Các nhà thờ được liệt kê trong Ứng dụng là tổ chức độc lập. Bước Theo Chân Chúa không liên kết, được chứng thực bởi, hoặc chịu trách nhiệm về bất kỳ nhà thờ nào, giáo lý, sự kiện hoặc hoạt động của họ. Chúng tôi chỉ liệt kê nhà thờ cho mục đích danh bạ và điểm danh.</p>
+    <p data-vi>Các nhà thờ được liệt kê trong Ứng dụng là tổ chức độc lập. Bước Theo Chân Chúa không liên kết, được chứng thực bởi, hoặc chịu trách nhiệm về bất kỳ nhà thờ nào, giáo lý, sự kiện hoặc hoạt động của họ. Chúng tôi chỉ liệt kê nhà thờ cho mục đích danh bạ và điểm danh.</p>
   </section>
 
   <!-- § 8 -->
@@ -295,10 +296,10 @@
     <div class="section-label">
       <span class="section-num">§ 8</span>
       <h2 class="section-title" data-en>Intellectual Property</h2>
-      <h2 class="section-title" data-vi style="display:none">Sở hữu Trí tuệ</h2>
+      <h2 class="section-title" data-vi>Sở hữu Trí tuệ</h2>
     </div>
     <p data-en>All content, design, graphics, and code in Bước Theo Chân Chúa are owned by the developer and protected under applicable intellectual property laws. You receive a limited, non-exclusive, non-transferable license to use the App for personal, non-commercial purposes only.</p>
-    <p data-vi style="display:none">Tất cả nội dung, thiết kế, đồ họa và mã nguồn của Bước Theo Chân Chúa thuộc quyền sở hữu của nhà phát triển và được bảo vệ theo luật sở hữu trí tuệ. Bạn được cấp giấy phép hạn chế, không độc quyền để sử dụng Ứng dụng cho mục đích cá nhân, phi thương mại.</p>
+    <p data-vi>Tất cả nội dung, thiết kế, đồ họa và mã nguồn của Bước Theo Chân Chúa thuộc quyền sở hữu của nhà phát triển và được bảo vệ theo luật sở hữu trí tuệ. Bạn được cấp giấy phép hạn chế, không độc quyền để sử dụng Ứng dụng cho mục đích cá nhân, phi thương mại.</p>
   </section>
 
   <!-- § 9 -->
@@ -306,10 +307,10 @@
     <div class="section-label">
       <span class="section-num">§ 9</span>
       <h2 class="section-title" data-en>Disclaimer of Warranties</h2>
-      <h2 class="section-title" data-vi style="display:none">Miễn trừ Bảo đảm</h2>
+      <h2 class="section-title" data-vi>Miễn trừ Bảo đảm</h2>
     </div>
     <p data-en>The App is provided "as is" and "as available" without warranties of any kind. We do not guarantee that the App will be uninterrupted, error-free, or that any defects will be corrected. Your use of the App is at your sole risk.</p>
-    <p data-vi style="display:none">Ứng dụng được cung cấp "nguyên trạng" và "theo hiện trạng" mà không có bất kỳ bảo đảm nào. Chúng tôi không đảm bảo Ứng dụng hoạt động liên tục hoặc không có lỗi. Việc sử dụng Ứng dụng là rủi ro của riêng bạn.</p>
+    <p data-vi>Ứng dụng được cung cấp "nguyên trạng" và "theo hiện trạng" mà không có bất kỳ bảo đảm nào. Chúng tôi không đảm bảo Ứng dụng hoạt động liên tục hoặc không có lỗi. Việc sử dụng Ứng dụng là rủi ro của riêng bạn.</p>
   </section>
 
   <!-- § 10 -->
@@ -317,10 +318,10 @@
     <div class="section-label">
       <span class="section-num">§ 10</span>
       <h2 class="section-title" data-en>Limitation of Liability</h2>
-      <h2 class="section-title" data-vi style="display:none">Giới hạn Trách nhiệm</h2>
+      <h2 class="section-title" data-vi>Giới hạn Trách nhiệm</h2>
     </div>
     <p data-en>To the fullest extent permitted by law, we shall not be liable for any indirect, incidental, or consequential damages arising from your use of the App, including loss of data, device damage, or loss of attendance records.</p>
-    <p data-vi style="display:none">Trong phạm vi tối đa được pháp luật cho phép, chúng tôi không chịu trách nhiệm về bất kỳ thiệt hại gián tiếp hoặc ngẫu nhiên nào phát sinh từ việc bạn sử dụng Ứng dụng, bao gồm mất dữ liệu, hỏng thiết bị hoặc mất hồ sơ tham dự.</p>
+    <p data-vi>Trong phạm vi tối đa được pháp luật cho phép, chúng tôi không chịu trách nhiệm về bất kỳ thiệt hại gián tiếp hoặc ngẫu nhiên nào phát sinh từ việc bạn sử dụng Ứng dụng, bao gồm mất dữ liệu, hỏng thiết bị hoặc mất hồ sơ tham dự.</p>
   </section>
 
   <!-- § 11 -->
@@ -328,10 +329,10 @@
     <div class="section-label">
       <span class="section-num">§ 11</span>
       <h2 class="section-title" data-en>Account Termination</h2>
-      <h2 class="section-title" data-vi style="display:none">Chấm dứt Tài khoản</h2>
+      <h2 class="section-title" data-vi>Chấm dứt Tài khoản</h2>
     </div>
     <p data-en>You may delete your account at any time from within the App. We reserve the right to suspend or permanently terminate any account that violates these Terms, engages in fraudulent activity, or poses a security risk.</p>
-    <p data-vi style="display:none">Bạn có thể xóa tài khoản bất kỳ lúc nào từ trong Ứng dụng. Chúng tôi có quyền đình chỉ hoặc chấm dứt vĩnh viễn bất kỳ tài khoản nào vi phạm Điều khoản này, thực hiện gian lận hoặc gây rủi ro bảo mật.</p>
+    <p data-vi>Bạn có thể xóa tài khoản bất kỳ lúc nào từ trong Ứng dụng. Chúng tôi có quyền đình chỉ hoặc chấm dứt vĩnh viễn bất kỳ tài khoản nào vi phạm Điều khoản này, thực hiện gian lận hoặc gây rủi ro bảo mật.</p>
   </section>
 
   <!-- § 12 -->
@@ -339,10 +340,10 @@
     <div class="section-label">
       <span class="section-num">§ 12</span>
       <h2 class="section-title" data-en>Changes to These Terms</h2>
-      <h2 class="section-title" data-vi style="display:none">Thay đổi Điều khoản</h2>
+      <h2 class="section-title" data-vi>Thay đổi Điều khoản</h2>
     </div>
     <p data-en>We may update these Terms from time to time. When we do, we will update the "Last updated" date. Continued use of the App after any changes constitutes acceptance of the new Terms.</p>
-    <p data-vi style="display:none">Chúng tôi có thể cập nhật Điều khoản theo thời gian. Khi đó, chúng tôi sẽ cập nhật ngày "Cập nhật lần cuối". Việc tiếp tục sử dụng Ứng dụng cấu thành sự chấp nhận Điều khoản mới.</p>
+    <p data-vi>Chúng tôi có thể cập nhật Điều khoản theo thời gian. Khi đó, chúng tôi sẽ cập nhật ngày "Cập nhật lần cuối". Việc tiếp tục sử dụng Ứng dụng cấu thành sự chấp nhận Điều khoản mới.</p>
   </section>
 
   <!-- § 13 -->
@@ -350,10 +351,10 @@
     <div class="section-label">
       <span class="section-num">§ 13</span>
       <h2 class="section-title" data-en>Governing Law</h2>
-      <h2 class="section-title" data-vi style="display:none">Luật Điều chỉnh</h2>
+      <h2 class="section-title" data-vi>Luật Điều chỉnh</h2>
     </div>
     <p data-en>These Terms are governed by the laws of Vietnam. Disputes shall be resolved in the courts of Ho Chi Minh City, Vietnam.</p>
-    <p data-vi style="display:none">Các Điều khoản này được điều chỉnh bởi pháp luật Việt Nam. Tranh chấp sẽ được giải quyết tại tòa án Thành phố Hồ Chí Minh, Việt Nam.</p>
+    <p data-vi>Các Điều khoản này được điều chỉnh bởi pháp luật Việt Nam. Tranh chấp sẽ được giải quyết tại tòa án Thành phố Hồ Chí Minh, Việt Nam.</p>
   </section>
 
   <!-- § 14 -->
@@ -361,10 +362,10 @@
     <div class="section-label">
       <span class="section-num">§ 14</span>
       <h2 class="section-title" data-en>Contact Us</h2>
-      <h2 class="section-title" data-vi style="display:none">Liên hệ</h2>
+      <h2 class="section-title" data-vi>Liên hệ</h2>
     </div>
     <p data-en>Questions about these Terms? Write to <a href="mailto:pcngocthach@gmail.com">pcngocthach@gmail.com</a> — we aim to respond within 14 days.</p>
-    <p data-vi style="display:none">Câu hỏi về Điều khoản? Gửi email đến <a href="mailto:pcngocthach@gmail.com">pcngocthach@gmail.com</a> — chúng tôi cố gắng phản hồi trong vòng 14 ngày.</p>
+    <p data-vi>Câu hỏi về Điều khoản? Gửi email đến <a href="mailto:pcngocthach@gmail.com">pcngocthach@gmail.com</a> — chúng tôi cố gắng phản hồi trong vòng 14 ngày.</p>
   </section>
 
   <hr class="doc-divider">
@@ -378,13 +379,8 @@
 
 <script>
 function setLang(lang, btn) {
-  document.querySelectorAll('[data-en]').forEach(el => {
-    el.style.display = lang === 'en' ? '' : 'none';
-  });
-  document.querySelectorAll('[data-vi]').forEach(el => {
-    el.style.display = lang === 'vi' ? '' : 'none';
-  });
-  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+  document.body.classList.toggle('vi', lang === 'vi');
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
 }
 </script>

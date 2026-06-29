@@ -145,7 +145,8 @@
   .doc-footer a:hover { color: var(--accent); }
 
   /* ── LANG ── */
-  [data-vi] { display: none; }
+  body:not(.vi) [data-vi] { display: none; }
+  body.vi [data-en] { display: none; }
 
   :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 </style>
@@ -165,17 +166,17 @@
 <main class="doc">
 
   <p class="doc-eyebrow" data-en>Privacy · Bước Theo Chân Chúa</p>
-  <p class="doc-eyebrow" data-vi style="display:none">Bảo mật · Bước Theo Chân Chúa</p>
+  <p class="doc-eyebrow" data-vi>Bảo mật · Bước Theo Chân Chúa</p>
 
   <h1 class="doc-title" data-en>Privacy Policy</h1>
-  <h1 class="doc-title" data-vi style="display:none">Chính sách Bảo mật</h1>
+  <h1 class="doc-title" data-vi>Chính sách Bảo mật</h1>
 
   <p class="doc-meta" data-en>Effective June 29, 2026 &nbsp;·&nbsp; Last updated June 29, 2026</p>
-  <p class="doc-meta" data-vi style="display:none">Có hiệu lực 29/06/2026 &nbsp;·&nbsp; Cập nhật lần cuối 29/06/2026</p>
+  <p class="doc-meta" data-vi>Có hiệu lực 29/06/2026 &nbsp;·&nbsp; Cập nhật lần cuối 29/06/2026</p>
 
   <div class="preamble">
     <p data-en>Your privacy matters. This policy explains exactly what data Bước Theo Chân Chúa collects, why we collect it, and how you can control it.</p>
-    <p data-vi style="display:none">Quyền riêng tư của bạn quan trọng với chúng tôi. Chính sách này giải thích rõ dữ liệu nào Bước Theo Chân Chúa thu thập, lý do thu thập, và cách bạn kiểm soát chúng.</p>
+    <p data-vi>Quyền riêng tư của bạn quan trọng với chúng tôi. Chính sách này giải thích rõ dữ liệu nào Bước Theo Chân Chúa thu thập, lý do thu thập, và cách bạn kiểm soát chúng.</p>
   </div>
 
   <!-- § 1 -->
@@ -183,10 +184,10 @@
     <div class="section-label">
       <span class="section-num">§ 1</span>
       <h2 class="section-title" data-en>Who We Are</h2>
-      <h2 class="section-title" data-vi style="display:none">Chúng tôi là ai</h2>
+      <h2 class="section-title" data-vi>Chúng tôi là ai</h2>
     </div>
     <p data-en>Bước Theo Chân Chúa is a mobile application for church attendance tracking and community gamification. For privacy inquiries, contact us at <a href="mailto:pcngocthach@gmail.com">pcngocthach@gmail.com</a>.</p>
-    <p data-vi style="display:none">Bước Theo Chân Chúa là ứng dụng di động cho việc theo dõi tham dự nhà thờ và gamification cộng đồng. Để liên hệ về quyền riêng tư: <a href="mailto:pcngocthach@gmail.com">pcngocthach@gmail.com</a>.</p>
+    <p data-vi>Bước Theo Chân Chúa là ứng dụng di động cho việc theo dõi tham dự nhà thờ và gamification cộng đồng. Để liên hệ về quyền riêng tư: <a href="mailto:pcngocthach@gmail.com">pcngocthach@gmail.com</a>.</p>
   </section>
 
   <!-- § 2 -->
@@ -194,51 +195,51 @@
     <div class="section-label">
       <span class="section-num">§ 2</span>
       <h2 class="section-title" data-en>Information We Collect</h2>
-      <h2 class="section-title" data-vi style="display:none">Thông tin chúng tôi thu thập</h2>
+      <h2 class="section-title" data-vi>Thông tin chúng tôi thu thập</h2>
     </div>
     <p data-en>We collect only what is necessary to operate the App.</p>
-    <p data-vi style="display:none">Chúng tôi chỉ thu thập những gì cần thiết để vận hành Ứng dụng.</p>
+    <p data-vi>Chúng tôi chỉ thu thập những gì cần thiết để vận hành Ứng dụng.</p>
 
     <p class="sub-head" data-en>Account information</p>
-    <p class="sub-head" data-vi style="display:none">Thông tin tài khoản</p>
+    <p class="sub-head" data-vi>Thông tin tài khoản</p>
     <ul>
       <li data-en>Full name and email address (provided during registration)</li>
-      <li data-vi style="display:none">Họ tên và địa chỉ email (cung cấp khi đăng ký)</li>
+      <li data-vi>Họ tên và địa chỉ email (cung cấp khi đăng ký)</li>
       <li data-en>Password — stored as a one-way cryptographic hash; we cannot read it</li>
-      <li data-vi style="display:none">Mật khẩu — lưu dưới dạng mã băm một chiều, không thể đọc lại</li>
+      <li data-vi>Mật khẩu — lưu dưới dạng mã băm một chiều, không thể đọc lại</li>
       <li data-en>Profile picture (optional, uploaded by you)</li>
-      <li data-vi style="display:none">Ảnh đại diện (tùy chọn, do bạn tải lên)</li>
+      <li data-vi>Ảnh đại diện (tùy chọn, do bạn tải lên)</li>
     </ul>
 
     <p class="sub-head" data-en>Location data</p>
-    <p class="sub-head" data-vi style="display:none">Dữ liệu vị trí</p>
+    <p class="sub-head" data-vi>Dữ liệu vị trí</p>
     <ul>
       <li data-en>Your GPS coordinates are accessed <strong>only at the moment you trigger a check-in</strong>.</li>
-      <li data-vi style="display:none">Tọa độ GPS chỉ được truy cập <strong>tại thời điểm bạn thực hiện điểm danh</strong>.</li>
+      <li data-vi>Tọa độ GPS chỉ được truy cập <strong>tại thời điểm bạn thực hiện điểm danh</strong>.</li>
       <li data-en>We store the fact that a check-in occurred at a given church at a given time — not your continuous location history.</li>
-      <li data-vi style="display:none">Chúng tôi chỉ lưu rằng điểm danh đã xảy ra tại nhà thờ nào, lúc nào — không lưu lịch sử vị trí liên tục.</li>
+      <li data-vi>Chúng tôi chỉ lưu rằng điểm danh đã xảy ra tại nhà thờ nào, lúc nào — không lưu lịch sử vị trí liên tục.</li>
       <li data-en>Location is never accessed in the background.</li>
-      <li data-vi style="display:none">Vị trí không bao giờ được truy cập khi chạy nền.</li>
+      <li data-vi>Vị trí không bao giờ được truy cập khi chạy nền.</li>
     </ul>
 
     <p class="sub-head" data-en>Activity data</p>
-    <p class="sub-head" data-vi style="display:none">Dữ liệu hoạt động</p>
+    <p class="sub-head" data-vi>Dữ liệu hoạt động</p>
     <ul>
       <li data-en>Attendance history (church, date, and time of each check-in)</li>
-      <li data-vi style="display:none">Lịch sử tham dự (nhà thờ, ngày, giờ mỗi lần điểm danh)</li>
+      <li data-vi>Lịch sử tham dự (nhà thờ, ngày, giờ mỗi lần điểm danh)</li>
       <li data-en>Points earned, missions completed, achievements unlocked, streak records</li>
-      <li data-vi style="display:none">Điểm tích lũy, nhiệm vụ hoàn thành, thành tích mở khóa, chuỗi tham dự</li>
+      <li data-vi>Điểm tích lũy, nhiệm vụ hoàn thành, thành tích mở khóa, chuỗi tham dự</li>
       <li data-en>Leaderboard ranking (derived from the above)</li>
-      <li data-vi style="display:none">Thứ hạng bảng xếp hạng (được tính từ dữ liệu trên)</li>
+      <li data-vi>Thứ hạng bảng xếp hạng (được tính từ dữ liệu trên)</li>
     </ul>
 
     <p class="sub-head" data-en>Technical data</p>
-    <p class="sub-head" data-vi style="display:none">Dữ liệu kỹ thuật</p>
+    <p class="sub-head" data-vi>Dữ liệu kỹ thuật</p>
     <ul>
       <li data-en>Device type and OS version (for crash diagnosis only)</li>
-      <li data-vi style="display:none">Loại thiết bị và phiên bản hệ điều hành (chỉ để chẩn đoán sự cố)</li>
+      <li data-vi>Loại thiết bị và phiên bản hệ điều hành (chỉ để chẩn đoán sự cố)</li>
       <li data-en>App version and session timestamps</li>
-      <li data-vi style="display:none">Phiên bản Ứng dụng và thời gian phiên đăng nhập</li>
+      <li data-vi>Phiên bản Ứng dụng và thời gian phiên đăng nhập</li>
     </ul>
   </section>
 
@@ -247,43 +248,43 @@
     <div class="section-label">
       <span class="section-num">§ 3</span>
       <h2 class="section-title" data-en>How We Use Your Information</h2>
-      <h2 class="section-title" data-vi style="display:none">Cách chúng tôi sử dụng thông tin</h2>
+      <h2 class="section-title" data-vi>Cách chúng tôi sử dụng thông tin</h2>
     </div>
 
     <div class="tbl-wrap">
       <table>
         <thead>
           <tr>
-            <th data-en>Purpose</th><th data-vi style="display:none">Mục đích</th>
-            <th data-en>Data used</th><th data-vi style="display:none">Dữ liệu sử dụng</th>
-            <th data-en>Legal basis</th><th data-vi style="display:none">Căn cứ pháp lý</th>
+            <th data-en>Purpose</th><th data-vi>Mục đích</th>
+            <th data-en>Data used</th><th data-vi>Dữ liệu sử dụng</th>
+            <th data-en>Legal basis</th><th data-vi>Căn cứ pháp lý</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td data-en>Verify church check-in</td><td data-vi style="display:none">Xác minh điểm danh nhà thờ</td>
-            <td data-en>GPS, account ID</td><td data-vi style="display:none">GPS, ID tài khoản</td>
-            <td data-en>Contract</td><td data-vi style="display:none">Hợp đồng</td>
+            <td data-en>Verify church check-in</td><td data-vi>Xác minh điểm danh nhà thờ</td>
+            <td data-en>GPS, account ID</td><td data-vi>GPS, ID tài khoản</td>
+            <td data-en>Contract</td><td data-vi>Hợp đồng</td>
           </tr>
           <tr>
-            <td data-en>Display leaderboard &amp; rankings</td><td data-vi style="display:none">Hiển thị bảng xếp hạng</td>
-            <td data-en>Name, points, rank</td><td data-vi style="display:none">Tên, điểm, thứ hạng</td>
-            <td data-en>Legitimate interest</td><td data-vi style="display:none">Lợi ích hợp pháp</td>
+            <td data-en>Display leaderboard &amp; rankings</td><td data-vi>Hiển thị bảng xếp hạng</td>
+            <td data-en>Name, points, rank</td><td data-vi>Tên, điểm, thứ hạng</td>
+            <td data-en>Legitimate interest</td><td data-vi>Lợi ích hợp pháp</td>
           </tr>
           <tr>
-            <td data-en>Award missions &amp; achievements</td><td data-vi style="display:none">Trao nhiệm vụ và thành tích</td>
-            <td data-en>Attendance history, points</td><td data-vi style="display:none">Lịch sử tham dự, điểm</td>
-            <td data-en>Contract</td><td data-vi style="display:none">Hợp đồng</td>
+            <td data-en>Award missions &amp; achievements</td><td data-vi>Trao nhiệm vụ và thành tích</td>
+            <td data-en>Attendance history, points</td><td data-vi>Lịch sử tham dự, điểm</td>
+            <td data-en>Contract</td><td data-vi>Hợp đồng</td>
           </tr>
           <tr>
-            <td data-en>Service notifications</td><td data-vi style="display:none">Thông báo dịch vụ</td>
-            <td data-en>Email, device token</td><td data-vi style="display:none">Email, device token</td>
-            <td data-en>Consent (opt-in)</td><td data-vi style="display:none">Sự đồng ý</td>
+            <td data-en>Service notifications</td><td data-vi>Thông báo dịch vụ</td>
+            <td data-en>Email, device token</td><td data-vi>Email, device token</td>
+            <td data-en>Consent (opt-in)</td><td data-vi>Sự đồng ý</td>
           </tr>
           <tr>
-            <td data-en>Improve App performance</td><td data-vi style="display:none">Cải thiện hiệu suất</td>
-            <td data-en>Technical data, anonymised</td><td data-vi style="display:none">Dữ liệu kỹ thuật, ẩn danh</td>
-            <td data-en>Legitimate interest</td><td data-vi style="display:none">Lợi ích hợp pháp</td>
+            <td data-en>Improve App performance</td><td data-vi>Cải thiện hiệu suất</td>
+            <td data-en>Technical data, anonymised</td><td data-vi>Dữ liệu kỹ thuật, ẩn danh</td>
+            <td data-en>Legitimate interest</td><td data-vi>Lợi ích hợp pháp</td>
           </tr>
         </tbody>
       </table>
@@ -295,19 +296,19 @@
     <div class="section-label">
       <span class="section-num">§ 4</span>
       <h2 class="section-title" data-en>Who We Share Your Data With</h2>
-      <h2 class="section-title" data-vi style="display:none">Chúng tôi chia sẻ dữ liệu với ai</h2>
+      <h2 class="section-title" data-vi>Chúng tôi chia sẻ dữ liệu với ai</h2>
     </div>
     <p data-en>We do not sell your personal data. We may share limited data with:</p>
-    <p data-vi style="display:none">Chúng tôi không bán dữ liệu cá nhân của bạn. Chúng tôi có thể chia sẻ dữ liệu hạn chế với:</p>
+    <p data-vi>Chúng tôi không bán dữ liệu cá nhân của bạn. Chúng tôi có thể chia sẻ dữ liệu hạn chế với:</p>
     <ul>
       <li data-en><strong>Church administrators</strong> — Your name and attendance records are visible to administrators of churches you check in to.</li>
-      <li data-vi style="display:none"><strong>Quản trị viên nhà thờ</strong> — Tên và hồ sơ tham dự của bạn hiển thị với quản trị viên của nhà thờ bạn đã điểm danh.</li>
+      <li data-vi><strong>Quản trị viên nhà thờ</strong> — Tên và hồ sơ tham dự của bạn hiển thị với quản trị viên của nhà thờ bạn đã điểm danh.</li>
       <li data-en><strong>Other users (leaderboard)</strong> — Your display name and points rank are visible on the public leaderboard.</li>
-      <li data-vi style="display:none"><strong>Người dùng khác (bảng xếp hạng)</strong> — Tên hiển thị và thứ hạng điểm của bạn hiển thị trên bảng xếp hạng công khai.</li>
+      <li data-vi><strong>Người dùng khác (bảng xếp hạng)</strong> — Tên hiển thị và thứ hạng điểm của bạn hiển thị trên bảng xếp hạng công khai.</li>
       <li data-en><strong>Cloud infrastructure</strong> — Our servers are hosted on a cloud provider; data is processed within their secure environment and never re-sold.</li>
-      <li data-vi style="display:none"><strong>Hạ tầng đám mây</strong> — Máy chủ được lưu trữ trên nhà cung cấp đám mây; dữ liệu được xử lý trong môi trường bảo mật của họ và không bao giờ bị bán lại.</li>
+      <li data-vi><strong>Hạ tầng đám mây</strong> — Máy chủ được lưu trữ trên nhà cung cấp đám mây; dữ liệu được xử lý trong môi trường bảo mật của họ và không bao giờ bị bán lại.</li>
       <li data-en><strong>Legal obligation</strong> — We may disclose data when required by law or to protect user safety.</li>
-      <li data-vi style="display:none"><strong>Nghĩa vụ pháp lý</strong> — Chúng tôi có thể tiết lộ dữ liệu khi có yêu cầu theo pháp luật hoặc để bảo vệ an toàn người dùng.</li>
+      <li data-vi><strong>Nghĩa vụ pháp lý</strong> — Chúng tôi có thể tiết lộ dữ liệu khi có yêu cầu theo pháp luật hoặc để bảo vệ an toàn người dùng.</li>
     </ul>
   </section>
 
@@ -316,15 +317,15 @@
     <div class="section-label">
       <span class="section-num">§ 5</span>
       <h2 class="section-title" data-en>Data Retention</h2>
-      <h2 class="section-title" data-vi style="display:none">Thời gian lưu trữ Dữ liệu</h2>
+      <h2 class="section-title" data-vi>Thời gian lưu trữ Dữ liệu</h2>
     </div>
     <ul>
       <li data-en>Account and activity data is retained while your account is active.</li>
-      <li data-vi style="display:none">Dữ liệu tài khoản và hoạt động được lưu trong khi tài khoản còn hoạt động.</li>
+      <li data-vi>Dữ liệu tài khoản và hoạt động được lưu trong khi tài khoản còn hoạt động.</li>
       <li data-en>After account deletion, personal data is permanently deleted within <strong>30 days</strong>.</li>
-      <li data-vi style="display:none">Sau khi xóa tài khoản, dữ liệu cá nhân sẽ bị xóa vĩnh viễn trong vòng <strong>30 ngày</strong>.</li>
+      <li data-vi>Sau khi xóa tài khoản, dữ liệu cá nhân sẽ bị xóa vĩnh viễn trong vòng <strong>30 ngày</strong>.</li>
       <li data-en>Anonymized aggregate statistics (e.g., total check-ins per church) may be retained indefinitely for operational purposes.</li>
-      <li data-vi style="display:none">Thống kê tổng hợp ẩn danh (ví dụ: tổng số lần điểm danh mỗi nhà thờ) có thể được lưu vô thời hạn cho mục đích vận hành.</li>
+      <li data-vi>Thống kê tổng hợp ẩn danh (ví dụ: tổng số lần điểm danh mỗi nhà thờ) có thể được lưu vô thời hạn cho mục đích vận hành.</li>
     </ul>
   </section>
 
@@ -333,20 +334,20 @@
     <div class="section-label">
       <span class="section-num">§ 6</span>
       <h2 class="section-title" data-en>Security</h2>
-      <h2 class="section-title" data-vi style="display:none">Bảo mật</h2>
+      <h2 class="section-title" data-vi>Bảo mật</h2>
     </div>
     <ul>
       <li data-en>All traffic between the App and our servers is encrypted with <strong>HTTPS/TLS</strong>.</li>
-      <li data-vi style="display:none">Tất cả lưu lượng giữa Ứng dụng và máy chủ được mã hóa bằng <strong>HTTPS/TLS</strong>.</li>
+      <li data-vi>Tất cả lưu lượng giữa Ứng dụng và máy chủ được mã hóa bằng <strong>HTTPS/TLS</strong>.</li>
       <li data-en>Passwords are stored as <strong>bcrypt hashes</strong> — unreadable by our team.</li>
-      <li data-vi style="display:none">Mật khẩu được lưu dưới dạng <strong>bcrypt hash</strong> — không thể đọc bởi nhóm của chúng tôi.</li>
+      <li data-vi>Mật khẩu được lưu dưới dạng <strong>bcrypt hash</strong> — không thể đọc bởi nhóm của chúng tôi.</li>
       <li data-en>Authentication uses short-lived <strong>JWT tokens</strong>.</li>
-      <li data-vi style="display:none">Xác thực sử dụng <strong>JWT token</strong> có thời hạn ngắn.</li>
+      <li data-vi>Xác thực sử dụng <strong>JWT token</strong> có thời hạn ngắn.</li>
       <li data-en>Database access is restricted to authorized personnel only.</li>
-      <li data-vi style="display:none">Truy cập cơ sở dữ liệu chỉ giới hạn cho nhân viên được ủy quyền.</li>
+      <li data-vi>Truy cập cơ sở dữ liệu chỉ giới hạn cho nhân viên được ủy quyền.</li>
     </ul>
     <p data-en>No system is 100% secure. If you suspect unauthorized access, contact us immediately.</p>
-    <p data-vi style="display:none">Không có hệ thống nào an toàn 100%. Nếu nghi ngờ có truy cập trái phép, hãy liên hệ với chúng tôi ngay.</p>
+    <p data-vi>Không có hệ thống nào an toàn 100%. Nếu nghi ngờ có truy cập trái phép, hãy liên hệ với chúng tôi ngay.</p>
   </section>
 
   <!-- § 7 -->
@@ -354,10 +355,10 @@
     <div class="section-label">
       <span class="section-num">§ 7</span>
       <h2 class="section-title" data-en>Children's Privacy</h2>
-      <h2 class="section-title" data-vi style="display:none">Quyền riêng tư của Trẻ em</h2>
+      <h2 class="section-title" data-vi>Quyền riêng tư của Trẻ em</h2>
     </div>
     <p data-en>Bước Theo Chân Chúa is not directed to children under 13. We do not knowingly collect personal information from children under 13. If we learn we have done so, we will delete it promptly.</p>
-    <p data-vi style="display:none">Bước Theo Chân Chúa không hướng đến trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin cá nhân từ trẻ em dưới 13 tuổi. Nếu phát hiện điều này, chúng tôi sẽ xóa ngay.</p>
+    <p data-vi>Bước Theo Chân Chúa không hướng đến trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin cá nhân từ trẻ em dưới 13 tuổi. Nếu phát hiện điều này, chúng tôi sẽ xóa ngay.</p>
   </section>
 
   <!-- § 8 -->
@@ -365,22 +366,22 @@
     <div class="section-label">
       <span class="section-num">§ 8</span>
       <h2 class="section-title" data-en>Your Rights</h2>
-      <h2 class="section-title" data-vi style="display:none">Quyền của bạn</h2>
+      <h2 class="section-title" data-vi>Quyền của bạn</h2>
     </div>
     <ul>
       <li data-en><strong>Access</strong> — Request a copy of the data we hold about you.</li>
-      <li data-vi style="display:none"><strong>Truy cập</strong> — Yêu cầu bản sao dữ liệu chúng tôi lưu trữ về bạn.</li>
+      <li data-vi><strong>Truy cập</strong> — Yêu cầu bản sao dữ liệu chúng tôi lưu trữ về bạn.</li>
       <li data-en><strong>Correction</strong> — Update inaccurate information in your profile.</li>
-      <li data-vi style="display:none"><strong>Chỉnh sửa</strong> — Cập nhật thông tin không chính xác trong hồ sơ của bạn.</li>
+      <li data-vi><strong>Chỉnh sửa</strong> — Cập nhật thông tin không chính xác trong hồ sơ của bạn.</li>
       <li data-en><strong>Deletion</strong> — Delete your account via App Settings → Delete Account; personal data erased within 30 days.</li>
-      <li data-vi style="display:none"><strong>Xóa</strong> — Xóa tài khoản qua Cài đặt → Xóa tài khoản; dữ liệu cá nhân sẽ bị xóa trong 30 ngày.</li>
+      <li data-vi><strong>Xóa</strong> — Xóa tài khoản qua Cài đặt → Xóa tài khoản; dữ liệu cá nhân sẽ bị xóa trong 30 ngày.</li>
       <li data-en><strong>Objection</strong> — Opt out of the public leaderboard; this removes your name from community rankings.</li>
-      <li data-vi style="display:none"><strong>Phản đối</strong> — Từ chối bảng xếp hạng công khai; tên bạn sẽ bị xóa khỏi bảng xếp hạng cộng đồng.</li>
+      <li data-vi><strong>Phản đối</strong> — Từ chối bảng xếp hạng công khai; tên bạn sẽ bị xóa khỏi bảng xếp hạng cộng đồng.</li>
       <li data-en><strong>Portability</strong> — Request a machine-readable export of your attendance history.</li>
-      <li data-vi style="display:none"><strong>Portability</strong> — Yêu cầu xuất dữ liệu lịch sử tham dự ở định dạng có thể đọc bằng máy.</li>
+      <li data-vi><strong>Portability</strong> — Yêu cầu xuất dữ liệu lịch sử tham dự ở định dạng có thể đọc bằng máy.</li>
     </ul>
     <p data-en>To exercise any of these rights, email <a href="mailto:pcngocthach@gmail.com">pcngocthach@gmail.com</a>. We respond within 30 days.</p>
-    <p data-vi style="display:none">Để thực hiện bất kỳ quyền nào, email <a href="mailto:pcngocthach@gmail.com">pcngocthach@gmail.com</a>. Chúng tôi phản hồi trong 30 ngày.</p>
+    <p data-vi>Để thực hiện bất kỳ quyền nào, email <a href="mailto:pcngocthach@gmail.com">pcngocthach@gmail.com</a>. Chúng tôi phản hồi trong 30 ngày.</p>
   </section>
 
   <!-- § 9 -->
@@ -388,10 +389,10 @@
     <div class="section-label">
       <span class="section-num">§ 9</span>
       <h2 class="section-title" data-en>Changes to This Policy</h2>
-      <h2 class="section-title" data-vi style="display:none">Thay đổi Chính sách</h2>
+      <h2 class="section-title" data-vi>Thay đổi Chính sách</h2>
     </div>
     <p data-en>We may update this Privacy Policy from time to time. Material changes will be notified via the App or email. The "Last updated" date at the top always reflects the most recent revision. Continued use of the App after changes constitutes acceptance.</p>
-    <p data-vi style="display:none">Chúng tôi có thể cập nhật Chính sách Bảo mật theo thời gian. Thay đổi quan trọng sẽ được thông báo qua Ứng dụng hoặc email. Ngày "Cập nhật lần cuối" luôn phản ánh bản sửa đổi gần nhất.</p>
+    <p data-vi>Chúng tôi có thể cập nhật Chính sách Bảo mật theo thời gian. Thay đổi quan trọng sẽ được thông báo qua Ứng dụng hoặc email. Ngày "Cập nhật lần cuối" luôn phản ánh bản sửa đổi gần nhất.</p>
   </section>
 
   <!-- § 10 -->
@@ -399,10 +400,10 @@
     <div class="section-label">
       <span class="section-num">§ 10</span>
       <h2 class="section-title" data-en>Contact</h2>
-      <h2 class="section-title" data-vi style="display:none">Liên hệ</h2>
+      <h2 class="section-title" data-vi>Liên hệ</h2>
     </div>
     <p data-en>For all privacy-related questions or to exercise your rights, email <a href="mailto:pcngocthach@gmail.com">pcngocthach@gmail.com</a>. We aim to respond within 30 days.</p>
-    <p data-vi style="display:none">Để giải quyết câu hỏi về quyền riêng tư hoặc thực hiện quyền của bạn, email <a href="mailto:pcngocthach@gmail.com">pcngocthach@gmail.com</a>. Chúng tôi cố gắng phản hồi trong vòng 30 ngày.</p>
+    <p data-vi>Để giải quyết câu hỏi về quyền riêng tư hoặc thực hiện quyền của bạn, email <a href="mailto:pcngocthach@gmail.com">pcngocthach@gmail.com</a>. Chúng tôi cố gắng phản hồi trong vòng 30 ngày.</p>
   </section>
 
   <hr class="doc-divider">
@@ -416,13 +417,8 @@
 
 <script>
 function setLang(lang, btn) {
-  document.querySelectorAll('[data-en]').forEach(el => {
-    el.style.display = lang === 'en' ? '' : 'none';
-  });
-  document.querySelectorAll('[data-vi]').forEach(el => {
-    el.style.display = lang === 'vi' ? '' : 'none';
-  });
-  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+  document.body.classList.toggle('vi', lang === 'vi');
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
 }
 </script>
