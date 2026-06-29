@@ -1,6 +1,6 @@
-# CrankApp Legal Pages
+# Tìm Về Bên Chúa Legal Pages
 
-Static legal pages for CrankApp — hosted via GitHub Pages.
+Static legal pages for Tìm Về Bên Chúa — hosted via GitHub Pages.
 
 ## Pages
 
