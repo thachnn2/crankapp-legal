@@ -1,6 +1,6 @@
-# Tìm Về Bên Chúa Legal Pages
+# Bước Theo Chân Chúa Legal Pages
 
-Static legal pages for Tìm Về Bên Chúa — hosted via GitHub Pages.
+Static legal pages for Bước Theo Chân Chúa — hosted via GitHub Pages.
 
 ## Pages
 
