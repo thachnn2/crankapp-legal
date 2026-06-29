@@ -147,8 +147,8 @@
   <span style="color:var(--body);font-size:.8rem" data-en>Terms of Use</span>
   <span style="color:var(--body);font-size:.8rem;display:none" data-vi>Điều khoản Sử dụng</span>
   <div class="lang-pill">
-    <button class="lang-btn active" onclick="setLang('en')">EN</button>
-    <button class="lang-btn" onclick="setLang('vi')">VI</button>
+    <button class="lang-btn active" onclick="setLang('en', this)">EN</button>
+    <button class="lang-btn" onclick="setLang('vi', this)">VI</button>
   </div>
 </header>
 
@@ -377,7 +377,7 @@
 </main>
 
 <script>
-function setLang(lang) {
+function setLang(lang, btn) {
   document.querySelectorAll('[data-en]').forEach(el => {
     el.style.display = lang === 'en' ? '' : 'none';
   });
@@ -385,6 +385,6 @@ function setLang(lang) {
     el.style.display = lang === 'vi' ? '' : 'none';
   });
   document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-  event.currentTarget.classList.add('active');
+  btn.classList.add('active');
 }
 </script>
