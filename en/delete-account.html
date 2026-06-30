@@ -38,6 +38,9 @@
   .site-header a { color: var(--muted); text-decoration: none; font-size: .8rem; letter-spacing: .04em; }
   .site-header a:hover { color: var(--accent); }
   .crumb-sep { color: var(--border); margin: 0 .25rem; }
+  .lang-switch { margin-left: auto; display: flex; align-items: center; font-size: .75rem; letter-spacing: .05em; }
+  .lang-current { color: var(--body); font-weight: 600; }
+  .lang-sep { color: var(--border); }
 
   /* ── LAYOUT ── */
   .doc { width: 80%; margin: 0 auto; padding: 3.5rem 4rem 5rem; }
@@ -159,6 +162,11 @@
   <a href="index.html">Legal</a>
   <span class="crumb-sep">›</span>
   <span style="color:var(--body);font-size:.8rem">Delete Account</span>
+  <div class="lang-switch">
+    <a href="../vn/delete-account.html">🇻🇳 VI</a>
+    <span class="lang-sep">&nbsp;|&nbsp;</span>
+    <span class="lang-current">EN 🇬🇧</span>
+  </div>
 </header>
 
 <main class="doc">

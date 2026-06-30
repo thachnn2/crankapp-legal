@@ -21,6 +21,11 @@
     .back { position: fixed; top: 1.25rem; left: 1.5rem; font-size: .8rem; }
     .back a { color: var(--muted); text-decoration: none; }
     .back a:hover { color: var(--gold); }
+    .lang-switch { position: fixed; top: 1.25rem; right: 1.5rem; display: flex; align-items: center; font-size: .8rem; letter-spacing: .05em; gap: .15rem; }
+    .lang-current { color: var(--body); font-weight: 600; }
+    .lang-sep { color: var(--border); }
+    .lang-switch a { color: var(--muted); text-decoration: none; }
+    .lang-switch a:hover { color: var(--gold); }
     .logo {
       width: 64px; height: 64px; background: var(--gold-dim);
       border: 1px solid rgba(196,147,56,.3); border-radius: 16px;
@@ -46,6 +51,11 @@
 </head>
 <body>
   <div class="back"><a href="../index.html">← Language select</a></div>
+  <div class="lang-switch">
+    <a href="../vn/index.html">🇻🇳 VI</a>
+    <span class="lang-sep">&nbsp;|&nbsp;</span>
+    <span class="lang-current">EN 🇬🇧</span>
+  </div>
   <div class="logo">✝️</div>
   <h1>Bước Theo Chân Chúa</h1>
   <p class="sub">Legal documents · English</p>

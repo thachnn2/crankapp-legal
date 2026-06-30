@@ -36,6 +36,9 @@
   .site-header a { color: var(--muted); text-decoration: none; font-size: .8rem; letter-spacing: .04em; }
   .site-header a:hover { color: var(--accent); }
   .crumb-sep { color: var(--border); margin: 0 .25rem; }
+  .lang-switch { margin-left: auto; display: flex; align-items: center; font-size: .75rem; letter-spacing: .05em; }
+  .lang-current { color: var(--body); font-weight: 600; }
+  .lang-sep { color: var(--border); }
 
 
   /* ── LAYOUT ── */
@@ -146,7 +149,11 @@
 <header class="site-header">
   <a href="../index.html">Bước Theo Chân Chúa</a>
   <span class="crumb-sep">›</span>
-  <span style="color:var(--body);font-size:.8rem;display:none">Chính sách Bảo mật</span>
+  <span style="color:var(--body);font-size:.8rem">Chính sách Bảo mật</span>
+  <div class="lang-switch">
+    <span class="lang-current">🇻🇳 VI</span>
+    <span class="lang-sep">&nbsp;|&nbsp;</span>
+    <a href="../en/privacy.html">EN 🇬🇧</a>
   </div>
 </header>
 
@@ -331,8 +338,3 @@
 
 </main>
 
-<script>
-  document.body.classList.toggle('vi', lang === 'vi');
-  btn.classList.add('active');
-}
-</script>
