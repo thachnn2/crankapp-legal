@@ -1,0 +1,480 @@
+- generic [ref=e1]:
+  - link [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+    - text: Chuyển đến nội dung chính
+  - banner [ref=e3]:
+    - navigation [ref=e4]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /?trk=public_profile_nav-header-logo
+        - generic [ref=e6]: LinkedIn
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link [ref=e10] [cursor=pointer]:
+            - /url: https://www.linkedin.com/top-content?trk=public_profile_guest_nav_menu_topContent
+            - generic [ref=e12]: Nội dung hàng đầu
+        - listitem [ref=e13]:
+          - link [ref=e14] [cursor=pointer]:
+            - /url: https://vn.linkedin.com/pub/dir/+/+?trk=public_profile_guest_nav_menu_people
+            - generic [ref=e16]: Người
+        - listitem [ref=e17]:
+          - link [ref=e18] [cursor=pointer]:
+            - /url: https://vn.linkedin.com/learning/search?trk=public_profile_guest_nav_menu_learning
+            - generic [ref=e20]: Khóa học
+        - listitem [ref=e21]:
+          - link [ref=e22] [cursor=pointer]:
+            - /url: https://vn.linkedin.com/jobs/jobs-in-ho-chi-minh-city?trk=public_profile_guest_nav_menu_jobs
+            - generic [ref=e24]: Việc làm
+        - listitem [ref=e25]:
+          - link [ref=e26] [cursor=pointer]:
+            - /url: https://www.linkedin.com/games?trk=public_profile_guest_nav_menu_games
+            - generic [ref=e28]: Trò chơi
+      - generic [ref=e29]:
+        - link [ref=e30] [cursor=pointer]:
+          - /url: https://www.linkedin.com/login/vi?session_redirect=https%3A%2F%2Fvn%2Elinkedin%2Ecom%2Fin%2Fthachnguyenit&fromSignIn=true&trk=public_profile_nav-header-signin
+          - text: Đăng nhập
+        - link [ref=e31] [cursor=pointer]:
+          - /url: https://www.linkedin.com/signup/public-profile-join?vieweeVanityName=thachnguyenit&_l=vi&session_redirect=https%3A%2F%2Fvn.linkedin.com%2Fin%2Fthachnguyenit&trk=public_profile_nav-header-join
+          - text: Tham gia ngay
+  - main [ref=e32]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - figure [ref=e37]
+        - generic [ref=e40]:
+          - button [ref=e42] [cursor=pointer]:
+            - img [ref=e45]
+          - generic [ref=e46]:
+            - generic [ref=e47]:
+              - button [ref=e48] [cursor=pointer]:
+                - heading [level=1] [ref=e49]: Nguyễn Ngọc Thạch
+              - heading [level=3] [ref=e50]:
+                - generic [ref=e51]:
+                  - text: Ho Chi Minh City, Vietnam
+                  - generic [ref=e52]: ·
+                  - button [ref=e53] [cursor=pointer]: Thông tin liên hệ
+                  - generic [ref=e54]: 1 N Theo · 500+ kết nối
+              - heading [level=4] [ref=e55]:
+                - button [ref=e59] [cursor=pointer]: Xem các kết nối lẫn nhau của bạn
+              - generic [ref=e60]:
+                - link [ref=e61] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/signup/public-profile-join?vieweeVanityName=thachnguyenit&_l=vi&trk=public_profile_top-card-primary-button-join-to-view-profile
+                  - text: Tham gia để xem hồ sơ
+                - button [ref=e63] [cursor=pointer]: Nhắn tin
+            - generic [ref=e65]:
+              - link [ref=e67] [cursor=pointer]:
+                - /url: https://vn.linkedin.com/company/vng-group?trk=public_profile_topcard-current-company
+                - generic [ref=e68]: VNG Corporation
+              - generic [ref=e71]: Open HCM University
+          - button [ref=e74] [cursor=pointer]
+      - generic [ref=e75]:
+        - heading [level=2] [ref=e76]: Giới thiệu
+        - generic [ref=e78]:
+          - text: Professional Summary ● Above 5 years of experience in Android Mobile Development ●…
+          - button [ref=e80] [cursor=pointer]:
+            - generic [ref=e81]: xem thêm
+      - generic [ref=e82]:
+        - heading [level=2] [ref=e83]: Hoạt động
+        - heading [level=3] [ref=e84]: 1 N Theo
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - tablist [ref=e87]:
+              - tab [selected] [ref=e88] [cursor=pointer]: Bài đăng
+              - tab [ref=e89] [cursor=pointer]: Bình luận
+              - tab [ref=e90] [cursor=pointer]: Lượt thả cảm xúc
+            - tabpanel [ref=e91]:
+              - generic [ref=e92]:
+                - list [ref=e94]:
+                  - listitem [ref=e95]:
+                    - generic [ref=e96]:
+                      - generic [ref=e98]:
+                        - generic [ref=e99]:
+                          - link [ref=e100] [cursor=pointer]:
+                            - /url: https://vn.linkedin.com/in/thachnguyenit
+                            - generic [ref=e101]: Nguyễn Ngọc Thạch
+                          - img [ref=e102]
+                          - generic [ref=e103]:
+                            - heading [level=3] [ref=e104]: Nguyễn Ngọc Thạch
+                            - generic [ref=e105]: 6n
+                        - button [ref=e108] [cursor=pointer]
+                      - generic [ref=e109]:
+                        - link [ref=e110] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/posts/thachnguyenit_vng-chungtaychongdichcovid19-fightcovid19-activity-6647875991316369408-1Uo0
+                          - generic [ref=e111]: Nguyễn Ngọc Thạch đã chia sẻ nội dung này
+                        - generic [ref=e112]:
+                          - generic [ref=e114]:
+                            - link [ref=e115] [cursor=pointer]:
+                              - /url: https://vn.linkedin.com/company/vng-group
+                              - generic [ref=e116]: VNG
+                            - img [ref=e117]
+                            - generic [ref=e118]:
+                              - heading [level=3] [ref=e119]: VNG
+                              - generic [ref=e120]: 6n
+                          - generic [ref=e121]:
+                            - link [ref=e122] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/posts/thachnguyenit_vng-chungtaychongdichcovid19-fightcovid19-activity-6647875991316369408-1Uo0
+                              - generic [ref=e123]: Nguyễn Ngọc Thạch đã chia sẻ nội dung này
+                            - generic [ref=e124]:
+                              - text: "[English Below] VNG “GÓP SỨC” 5 TỶ ĐỒNG HỖ TRỢ PHÒNG DỊCH COVID-19 Với mong muốn đồng hành cùng cả nước trong “cuộc chiến” đẩy lùi Corona Virus, VNG sẽ đóng góp 5 tỷ VND vào Quỹ hỗ trợ phòng chống dịch của Chính phủ. Là công ty Công nghệ hàng đầu Việt Nam, VNG luôn nỗ lực thực hiện các trách nhiệm xã hội và đem đến những đóng góp tích cực cho cộng đồng. Vì thế, VNG sẽ không chỉ dừng lại ở việc ủng hộ, mà còn luôn đảm bảo chất lượng sản phẩm để tiếp tục phục vụ cho hàng chục triệu khách hàng trên toàn quốc trong suốt mùa dịch. Be safe and be strong, Việt Nam! Embracing challenges, VNG! -- VNG HAS COMMITTED 5 BILLION VND TO FIGHT COVID-19 Aiming to join hands with the whole nation in the \"fight\" against Corona Virus, VNG will commit 5 billion VND to the Vietnamese Government’s COVID-19 prevention support fund. As one of the top technology companies in Vietnam, we always strive to fulfill social responsibilities and bring positive contributions to the community. That’s why VNG would not only support in financial terms but also make sure all of our customers could have the best experience with our services and products throughout this pandemic time. Be safe and be strong, Việt Nam! Embracing challenges, VNG!"
+                              - link [ref=e125] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fvng&trk=public_profile__posts-text
+                                - text: "#VNG"
+                              - link [ref=e126] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fchungtaychongdichcovid19&trk=public_profile__posts-text
+                                - text: "#ChungtaychongdichCovid19"
+                              - link [ref=e127] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Ffightcovid19&trk=public_profile__posts-text
+                                - text: "#FightCovid19"
+                              - link [ref=e128] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2FAfnCUXylAePicorona&trk=public_profile__posts-text
+                                - text: "#ĐẩylùiCorona"
+                              - link [ref=e129] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/posts/thachnguyenit_vng-chungtaychongdichcovid19-fightcovid19-activity-6647875991316369408-1Uo0
+                                - text: ...khác
+                              - link [ref=e130] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/posts/thachnguyenit_vng-chungtaychongdichcovid19-fightcovid19-activity-6647875991316369408-1Uo0
+                                - text: ...khác
+                            - generic [ref=e131]:
+                              - link [ref=e132] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/posts/thachnguyenit_vng-chungtaychongdichcovid19-fightcovid19-activity-6647875991316369408-1Uo0
+                                - generic [ref=e133]: public_profile__posts
+                              - img [ref=e137]
+                      - generic [ref=e138]:
+                        - link [ref=e140] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fvn%2Elinkedin%2Ecom%2Fin%2Fthachnguyenit%2Frecent-activity%2F&trk=public_profile__posts_social-actions-reactions
+                          - generic [ref=e141]: "6"
+                        - generic [ref=e142]:
+                          - link [ref=e144] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fvn%2Elinkedin%2Ecom%2Fin%2Fthachnguyenit%2Frecent-activity%2F&trk=public_profile__posts_like-cta
+                          - link [ref=e147] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fvn%2Elinkedin%2Ecom%2Fin%2Fthachnguyenit%2Frecent-activity%2F&trk=public_profile__posts_comment-cta
+                          - button [ref=e150] [cursor=pointer]
+                - button [ref=e153]:
+                  - generic [ref=e154]: Trượt đến mục 1
+            - text: · · · · · · ·
+          - link [ref=e156] [cursor=pointer]:
+            - /url: https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fvn%2Elinkedin%2Ecom%2Fin%2Fthachnguyenit%2Frecent-activity%2F&trk=public_profile
+            - text: See all activities
+      - generic [ref=e157]:
+        - heading [level=2] [ref=e158]: Kinh nghiệm &Giáo dục
+        - generic [ref=e160]:
+          - list [ref=e161]:
+            - listitem [ref=e162]:
+              - generic [ref=e163]:
+                - heading [level=3] [ref=e164]: VNG Corporation
+                - heading [level=4] [ref=e165]:
+                  - paragraph [ref=e166]: "****** ******** ********"
+          - list [ref=e168]:
+            - listitem [ref=e169]:
+              - generic [ref=e170]:
+                - heading [level=3] [ref=e171]: "***** ************"
+                - heading [level=4] [ref=e172]:
+                  - paragraph [ref=e173]: "****** ******** ********"
+            - listitem [ref=e174]:
+              - generic [ref=e175]:
+                - heading [level=3] [ref=e176]: "******* ***********"
+                - heading [level=4] [ref=e177]:
+                  - paragraph [ref=e178]: "****** ******** ********"
+            - listitem [ref=e179]:
+              - generic [ref=e180]:
+                - heading [level=3] [ref=e181]: "**** *** **********"
+                - heading [level=4] [ref=e182]:
+                  - paragraph [ref=e183]: "******** ** **** ****** ******** ******* Good"
+                - paragraph [ref=e185]:
+                  - generic [ref=e186]:
+                    - time [ref=e187]: "2009"
+                    - text: "-"
+                    - time [ref=e188]: "2013"
+          - generic [ref=e189]:
+            - heading [level=2] [ref=e190]: Xem Nguyễn Ngọc ’trải nghiệm đầy đủ
+            - heading [level=3] [ref=e191]: Xem tiêu đề, nhiệm kỳ/thời gian giữ chức vụ của họ và hơn thế nữa.
+            - generic [ref=e192]:
+              - button [ref=e194] [cursor=pointer]:
+                - generic [ref=e195]: Đăng nhập
+              - paragraph [ref=e197]: hoặc
+              - paragraph [ref=e199]:
+                - text: Khi nhấp vào Tiếp tục để tham gia hoặc đăng nhập, bạn đồng ý với
+                - link [ref=e200] [cursor=pointer]:
+                  - /url: /legal/user-agreement?trk=public_profile_auth-button_user-agreement
+                  - text: Thỏa thuận người dùng
+                - text: ","
+                - link [ref=e201] [cursor=pointer]:
+                  - /url: /legal/privacy-policy?trk=public_profile_auth-button_privacy-policy
+                  - text: Chính sách quyền riêng tư
+                - text: và
+                - link [ref=e202] [cursor=pointer]:
+                  - /url: /legal/cookie-policy?trk=public_profile_auth-button_cookie-policy
+                  - text: Chính sách cookie
+                - text: của LinkedIn.
+      - generic [ref=e205]:
+        - heading [level=2] [ref=e206]: Xem Nguyễn Ngọc toàn hồ sơ
+        - list [ref=e207]:
+          - listitem [ref=e208]:
+            - generic [ref=e211]: Xem những người bạn biết chung
+          - listitem [ref=e212]:
+            - generic [ref=e215]: Được giới thiệu
+          - listitem [ref=e216]:
+            - generic [ref=e219]: Liên hệ Nguyễn Ngọc trực tiếp
+        - link [ref=e220] [cursor=pointer]:
+          - /url: https://www.linkedin.com/signup/public-profile-join?vieweeVanityName=thachnguyenit&_l=vi&trk=public_profile_bottom-cta-banner
+          - text: Tham gia để xem hồ sơ đầy đủ
+    - generic [ref=e221]:
+      - generic [ref=e222]:
+        - heading [level=2] [ref=e223]: Khác hồ sơ tương tự
+        - list [ref=e225]:
+          - listitem [ref=e226]:
+            - generic [ref=e227]:
+              - link [ref=e228] [cursor=pointer]:
+                - /url: https://vn.linkedin.com/in/anhdev
+                - generic [ref=e229]: Anh Tuan Nguyen
+              - generic [ref=e230]:
+                - heading [level=3] [ref=e231]: Anh Tuan Nguyen
+                - paragraph [ref=e232]: Smartie
+                - generic [ref=e233]:
+                  - generic [ref=e234]: 4 N người theo dõi
+                  - generic [ref=e235]: Hanoi Capital Region
+                - link [ref=e237] [cursor=pointer]:
+                  - /url: https://vn.linkedin.com/in/anhdev?trk=public_profile_browsemap_browse-map_connect-button
+                  - text: Xem hồ sơ
+          - listitem [ref=e238]:
+            - generic [ref=e239]:
+              - link [ref=e240] [cursor=pointer]:
+                - /url: https://vn.linkedin.com/in/tbm98
+                - generic [ref=e241]: Minh Tran
+              - generic [ref=e242]:
+                - heading [level=3] [ref=e243]: Minh Tran
+                - paragraph [ref=e244]: One Mount Group
+                - generic [ref=e245]:
+                  - generic [ref=e246]: 130 người theo dõi
+                  - generic [ref=e247]: Hanoi
+                - link [ref=e249] [cursor=pointer]:
+                  - /url: https://vn.linkedin.com/in/tbm98?trk=public_profile_browsemap_browse-map_connect-button
+                  - text: Xem hồ sơ
+          - listitem [ref=e250]:
+            - generic [ref=e251]:
+              - link [ref=e252] [cursor=pointer]:
+                - /url: https://vn.linkedin.com/in/dang-tan-tai
+                - generic [ref=e253]: Tài Đặng
+              - generic [ref=e254]:
+                - heading [level=3] [ref=e255]: Tài Đặng
+                - paragraph [ref=e256]: Kido
+                - generic [ref=e257]:
+                  - generic [ref=e258]: 436 người theo dõi
+                  - generic [ref=e259]: Vietnam
+                - link [ref=e261] [cursor=pointer]:
+                  - /url: https://vn.linkedin.com/in/dang-tan-tai?trk=public_profile_browsemap_browse-map_connect-button
+                  - text: Xem hồ sơ
+          - listitem [ref=e262]:
+            - generic [ref=e263]:
+              - link [ref=e264] [cursor=pointer]:
+                - /url: https://vn.linkedin.com/in/thinh-le-555836b5
+                - generic [ref=e265]: Thinh Le
+              - generic [ref=e266]:
+                - heading [level=3] [ref=e267]: Thinh Le
+                - paragraph [ref=e268]: Global Fashion Group
+                - generic [ref=e269]:
+                  - generic [ref=e270]: 343 người theo dõi
+                  - generic [ref=e271]: Ho Chi Minh City, Vietnam
+                - link [ref=e273] [cursor=pointer]:
+                  - /url: https://vn.linkedin.com/in/thinh-le-555836b5?trk=public_profile_browsemap_browse-map_connect-button
+                  - text: Xem hồ sơ
+          - listitem [ref=e274]:
+            - generic [ref=e275]:
+              - link [ref=e276] [cursor=pointer]:
+                - /url: https://vn.linkedin.com/in/vhminh/vi
+                - generic [ref=e277]: Minh Vũ
+              - generic [ref=e278]:
+                - heading [level=3] [ref=e279]: Minh Vũ
+                - paragraph [ref=e280]: Axon
+                - generic [ref=e281]:
+                  - generic [ref=e282]: 163 người theo dõi
+                  - generic [ref=e283]: Ho Chi Minh City, Vietnam
+                - link [ref=e285] [cursor=pointer]:
+                  - /url: https://vn.linkedin.com/in/vhminh/vi?trk=public_profile_browsemap_browse-map_connect-button
+                  - text: Xem hồ sơ
+          - listitem [ref=e286]:
+            - generic [ref=e287]:
+              - link [ref=e288] [cursor=pointer]:
+                - /url: https://vn.linkedin.com/in/toanhda
+                - generic [ref=e289]: Toan Huynh
+              - generic [ref=e290]:
+                - heading [level=3] [ref=e291]: Toan Huynh
+                - paragraph [ref=e292]: BE GROUP
+                - generic [ref=e293]:
+                  - generic [ref=e294]: 832 người theo dõi
+                  - generic [ref=e295]: Ho Chi Minh City, Vietnam
+                - link [ref=e297] [cursor=pointer]:
+                  - /url: https://vn.linkedin.com/in/toanhda?trk=public_profile_browsemap_browse-map_connect-button
+                  - text: Xem hồ sơ
+          - listitem [ref=e298]:
+            - generic [ref=e299]:
+              - link [ref=e300] [cursor=pointer]:
+                - /url: https://vn.linkedin.com/in/dink-ngan-2180bb38
+                - generic [ref=e301]: Dink Ngan
+              - generic [ref=e302]:
+                - heading [level=3] [ref=e303]: Dink Ngan
+                - paragraph [ref=e304]: VNG Corporation
+                - generic [ref=e305]:
+                  - generic [ref=e306]: 103 người theo dõi
+                  - generic [ref=e307]: Vietnam
+                - link [ref=e309] [cursor=pointer]:
+                  - /url: https://vn.linkedin.com/in/dink-ngan-2180bb38?trk=public_profile_browsemap_browse-map_connect-button
+                  - text: Xem hồ sơ
+          - listitem [ref=e310]:
+            - generic [ref=e311]:
+              - link [ref=e312] [cursor=pointer]:
+                - /url: https://vn.linkedin.com/in/imericvo
+                - generic [ref=e313]: Hau Vo
+              - generic [ref=e314]:
+                - heading [level=3] [ref=e315]: Hau Vo
+                - paragraph [ref=e316]: CXP-TEK
+                - generic [ref=e317]:
+                  - generic [ref=e318]: 2 N người theo dõi
+                  - generic [ref=e319]: Ho Chi Minh City, Vietnam
+                - link [ref=e321] [cursor=pointer]:
+                  - /url: https://vn.linkedin.com/in/imericvo?trk=public_profile_browsemap_browse-map_connect-button
+                  - text: Xem hồ sơ
+          - listitem [ref=e322]:
+            - generic [ref=e323]:
+              - link [ref=e324] [cursor=pointer]:
+                - /url: https://vn.linkedin.com/in/trandinhphuc
+                - generic [ref=e325]: Dinh Phuc Tran
+              - generic [ref=e326]:
+                - heading [level=3] [ref=e327]: Dinh Phuc Tran
+                - paragraph [ref=e328]: VNG Corporation
+                - generic [ref=e329]:
+                  - generic [ref=e330]: 72 người theo dõi
+                  - generic [ref=e331]: Vietnam
+                - link [ref=e333] [cursor=pointer]:
+                  - /url: https://vn.linkedin.com/in/trandinhphuc?trk=public_profile_browsemap_browse-map_connect-button
+                  - text: Xem hồ sơ
+      - generic [ref=e334]:
+        - heading [level=2] [ref=e335]:
+          - text: Những người khác có tên
+          - strong [ref=e336]: Nguyễn Ngọc Thạch
+          - text: trong
+          - strong [ref=e337]: Vietnam
+        - generic [ref=e338]:
+          - list [ref=e339]:
+            - listitem [ref=e340]:
+              - link [ref=e341] [cursor=pointer]:
+                - /url: https://vn.linkedin.com/in/nguy%E1%BB%85n-ng%E1%BB%8Dc-th%E1%BA%A1ch-bb09ab363?trk=public_profile_samename-profile
+                - generic [ref=e343]:
+                  - heading [level=3] [ref=e344]: Nguyễn Ngọc Thạch
+                  - generic [ref=e345]: Phường Long Biên
+            - listitem [ref=e346]:
+              - link [ref=e347] [cursor=pointer]:
+                - /url: https://vn.linkedin.com/in/nguy%E1%BB%85n-ng%E1%BB%8Dc-th%E1%BA%A1ch-b77b17185?trk=public_profile_samename-profile
+                - generic [ref=e349]:
+                  - heading [level=3] [ref=e350]: nguyễn ngọc thạch
+                  - generic [ref=e351]: Vietnam
+            - listitem [ref=e352]:
+              - link [ref=e353] [cursor=pointer]:
+                - /url: https://vn.linkedin.com/in/nguy%E1%BB%85n-ng%E1%BB%8Dc-th%E1%BA%A1ch-9746a5179?trk=public_profile_samename-profile
+                - generic [ref=e355]:
+                  - heading [level=3] [ref=e356]: Nguyễn Ngọc Thạch
+                  - generic [ref=e357]: Ho Chi Minh City, Vietnam
+            - listitem [ref=e358]:
+              - link [ref=e359] [cursor=pointer]:
+                - /url: https://vn.linkedin.com/in/nguy%E1%BB%85n-ng%E1%BB%8Dc-th%E1%BA%A1ch-29bbb2156?trk=public_profile_samename-profile
+                - generic [ref=e361]:
+                  - heading [level=3] [ref=e362]: Nguyễn Ngọc Thạch
+                  - generic [ref=e363]: Vietnam
+          - paragraph [ref=e364]: 10 Những người khác có tên Nguyễn Ngọc Thạch trong Vietnam là trên LinkedIn
+          - link [ref=e365] [cursor=pointer]:
+            - /url: https://www.linkedin.com/pub/dir/Nguy%E1%BB%85n+Ng%E1%BB%8Dc/Th%E1%BA%A1ch/vn-0-Vietnam?trk=public_profile_samename-see-all
+            - text: Xem những người khác có tên
+            - strong [ref=e366]: Nguyễn Ngọc Thạch
+      - generic [ref=e367]:
+        - heading [level=2] [ref=e368]: Thêm kỹ năng mới với các khóa học này
+        - generic [ref=e369]:
+          - list [ref=e370]:
+            - listitem [ref=e371]:
+              - link [ref=e372] [cursor=pointer]:
+                - /url: https://www.linkedin.com/learning/grpc-in-go?trk=public_profile_recommended-course
+                - generic [ref=e374]: 1 giờ 9 phút
+                - heading [level=3] [ref=e377]: gRPC in Go
+            - listitem [ref=e378]:
+              - link [ref=e379] [cursor=pointer]:
+                - /url: https://www.linkedin.com/learning/guided-lab-real-world-data-engineering-project-with-microsoft-fabric?trk=public_profile_recommended-course
+                - generic [ref=e381]: 57 phút
+                - heading [level=3] [ref=e384]: "Guided Lab: Real-World Data Engineering Project with Microsoft Fabric"
+            - listitem [ref=e385]:
+              - link [ref=e386] [cursor=pointer]:
+                - /url: https://www.linkedin.com/learning/advanced-ai-analytics-on-aws-amazon-bedrock-q-sagemaker-data-wrangler-and-quicksight?trk=public_profile_recommended-course
+                - generic [ref=e388]: 1 giờ 10 phút
+                - heading [level=3] [ref=e391]: "Advanced AI Analytics on AWS: Amazon Bedrock, Q, SageMaker Data Wrangler, and QuickSight"
+          - link [ref=e392] [cursor=pointer]:
+            - /url: https://vn.linkedin.com/learning/?trk=seo_pp_d_cymbii_more_m015_learning
+            - text: Xem tất cả các khóa học
+  - contentinfo [ref=e393]:
+    - list [ref=e394]:
+      - generic [ref=e395]: LinkedIn
+      - generic [ref=e397]: © 2026
+      - listitem [ref=e398]:
+        - link [ref=e399] [cursor=pointer]:
+          - /url: https://about.linkedin.com?trk=public_profile_v3_desktop_footer-about
+          - text: Giới thiệu
+      - listitem [ref=e400]:
+        - link [ref=e401] [cursor=pointer]:
+          - /url: https://www.linkedin.com/accessibility?trk=public_profile_v3_desktop_footer-accessibility
+          - text: Trợ năng
+      - listitem [ref=e402]:
+        - link [ref=e403] [cursor=pointer]:
+          - /url: https://www.linkedin.com/legal/user-agreement?trk=public_profile_v3_desktop_footer-user-agreement
+          - text: Thỏa thuận người dùng
+      - listitem [ref=e404]:
+        - link [ref=e405] [cursor=pointer]:
+          - /url: https://www.linkedin.com/legal/privacy-policy?trk=public_profile_v3_desktop_footer-privacy-policy
+          - text: Chính sách quyền riêng tư
+      - listitem [ref=e406]:
+        - link [ref=e407] [cursor=pointer]:
+          - /url: https://www.linkedin.com/legal/cookie-policy?trk=public_profile_v3_desktop_footer-cookie-policy
+          - text: Chính sách cookie
+      - listitem [ref=e408]:
+        - link [ref=e409] [cursor=pointer]:
+          - /url: https://www.linkedin.com/legal/copyright-policy?trk=public_profile_v3_desktop_footer-copyright-policy
+          - text: Chính sách bản quyền
+      - listitem [ref=e410]:
+        - link [ref=e411] [cursor=pointer]:
+          - /url: https://brand.linkedin.com/policies?trk=public_profile_v3_desktop_footer-brand-policy
+          - text: Chính sách thương hiệu
+      - listitem [ref=e412]:
+        - link [ref=e413] [cursor=pointer]:
+          - /url: https://www.linkedin.com/psettings/guest-controls?trk=public_profile_v3_desktop_footer-guest-controls
+          - text: Kiểm soát khách thăm
+      - listitem [ref=e414]:
+        - link [ref=e415] [cursor=pointer]:
+          - /url: https://www.linkedin.com/legal/professional-community-policies?trk=public_profile_v3_desktop_footer-community-guide
+          - text: Nguyên tắc cộng đồng
+      - listitem [ref=e416]:
+        - button [ref=e418]: Ngôn ngữ
+  - dialog "Đăng nhập để xem Nguyễn Ngọc toàn bộ hồ sơ" [active] [ref=e421]:
+    - button "Hủy bỏ" [ref=e422] [cursor=pointer]
+    - generic [ref=e424]:
+      - generic [ref=e425]:
+        - heading "Đăng nhập để xem Nguyễn Ngọc toàn bộ hồ sơ" [level=2] [ref=e426]
+        - paragraph [ref=e428]: Nguyễn Ngọc có thể giới thiệu bạn với hơn 10 người tại VNG
+      - generic [ref=e430]:
+        - generic:
+          - generic:
+            - button "Tiếp tục bằng Google"
+        - button "Đăng nhập bằng email" [ref=e431] [cursor=pointer]:
+          - generic [ref=e433]: Đăng nhập bằng email
+        - paragraph [ref=e435]: hoặc
+        - generic:
+          - generic:
+            - button "Tiếp tục bằng Google"
+        - paragraph [ref=e436]:
+          - text: Bạn mới sử dụng LinkedIn?
+          - link "Tham gia ngay" [ref=e437] [cursor=pointer]:
+            - /url: https://www.linkedin.com/signup/public-profile-join?vieweeVanityName=thachnguyenit&_l=vi&trk=public_profile_contextual-sign-in-modal_join-link
+        - paragraph [ref=e438]:
+          - text: Khi nhấp vào Tiếp tục để tham gia hoặc đăng nhập, bạn đồng ý với
+          - link "Thỏa thuận người dùng" [ref=e439] [cursor=pointer]:
+            - /url: /legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement
+          - text: ","
+          - link "Chính sách quyền riêng tư" [ref=e440] [cursor=pointer]:
+            - /url: /legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy
+          - text: và
+          - link "Chính sách cookie" [ref=e441] [cursor=pointer]:
+            - /url: /legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy
+          - text: của LinkedIn.
