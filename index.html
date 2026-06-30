@@ -3,165 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bước Theo Chân Chúa – Pháp lý</title>
-  <meta name="description" content="Điều khoản sử dụng và Chính sách bảo mật của ứng dụng Bước Theo Chân Chúa.">
+  <title>Bước Theo Chân Chúa – Legal</title>
+  <meta name="description" content="Legal documents for Bước Theo Chân Chúa — choose your language.">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
-      --bg:      #121008;
-      --surface: #1c1810;
-      --border:  #2e2318;
-      --muted:   #8a7660;
-      --body:    #e8ddc8;
-      --dim:     #b0a088;
-      --gold:    #c49338;
-      --gold-dim: rgba(196,147,56,.12);
+      --bg: #121008; --surface: #1c1810; --border: #2e2318;
+      --muted: #8a7660; --body: #e8ddc8;
+      --gold: #c49338; --gold-dim: rgba(196,147,56,.12);
     }
-
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--body);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
+      background: var(--bg); color: var(--body);
+      min-height: 100vh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; padding: 2rem;
+      gap: 0;
     }
-
-    /* ── LANG TOGGLE ── */
-    .lang-pill {
-      position: fixed; top: 1.25rem; right: 1.5rem;
-      display: flex; border: 1px solid var(--border); border-radius: 6px; overflow: hidden;
-      z-index: 10;
-    }
-    .lang-btn {
-      background: none; border: none; color: var(--muted);
-      padding: .3rem .8rem; font-size: .75rem; letter-spacing: .06em;
-      cursor: pointer; transition: background .15s, color .15s;
-    }
-    .lang-btn + .lang-btn { border-left: 1px solid var(--border); }
-    .lang-btn.active { background: var(--gold); color: var(--bg); }
-    .lang-btn:not(.active):hover { color: var(--body); }
-
-    /* ── LOGO ── */
     .logo {
-      width: 72px; height: 72px;
-      background: var(--gold-dim);
-      border: 1px solid rgba(196,147,56,.3);
-      border-radius: 18px;
+      width: 68px; height: 68px; background: var(--gold-dim);
+      border: 1px solid rgba(196,147,56,.3); border-radius: 16px;
       display: flex; align-items: center; justify-content: center;
-      font-size: 2.2rem;
-      margin-bottom: 1.5rem;
+      font-size: 2.2rem; margin-bottom: 1.25rem;
     }
-
-    /* ── TITLE ── */
     h1 {
       font-family: Georgia, 'Times New Roman', serif;
-      font-size: clamp(1.5rem, 4vw, 2rem);
-      font-weight: normal;
-      text-align: center;
-      margin-bottom: .4rem;
-      text-wrap: balance;
+      font-size: clamp(1.3rem, 4vw, 1.8rem);
+      font-weight: normal; text-align: center;
+      text-wrap: balance; margin-bottom: .35rem;
     }
-    .tagline {
-      font-size: .85rem; color: var(--muted);
-      text-align: center;
-      margin-bottom: .25rem;
+    .tagline { font-size: .82rem; color: var(--muted); margin-bottom: .2rem; text-align: center; }
+    .divider { width: 36px; height: 1px; background: var(--border); margin: 1.75rem auto 2rem; }
+    .prompt {
+      font-size: .72rem; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 1rem; text-align: center;
     }
-    .divider {
-      width: 40px; height: 1px;
-      background: var(--border);
-      margin: 1.5rem auto 2.5rem;
-    }
-
-    /* ── CARDS ── */
-    .cards {
-      display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: center;
-    }
-    .card {
+    .lang-cards { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .lang-card {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 1.75rem;
-      width: 220px;
-      text-decoration: none;
-      color: inherit;
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      text-decoration: none; color: inherit;
+      text-align: center; min-width: 160px;
       transition: border-color .2s, transform .2s;
     }
-    .card:hover {
-      border-color: var(--gold);
-      transform: translateY(-3px);
+    .lang-card:hover { border-color: var(--gold); transform: translateY(-3px); }
+    .lang-flag { font-size: 2rem; margin-bottom: .6rem; }
+    .lang-name {
+      font-family: Georgia, serif; font-size: 1rem;
+      font-weight: normal; color: var(--body);
+      margin-bottom: .25rem;
     }
-    .card-icon { font-size: 1.75rem; margin-bottom: .85rem; }
-    .card h2 {
-      font-family: Georgia, serif;
-      font-size: .95rem; font-weight: normal;
-      color: var(--body); margin-bottom: .35rem;
-    }
-    .card p { font-size: .82rem; color: var(--muted); line-height: 1.55; }
-
-    /* ── FOOTER ── */
-    footer {
-      margin-top: 3.5rem;
-      font-size: .75rem;
-      color: var(--border);
-      text-align: center;
-    }
-
-    [data-vi] { display: none; }
+    .lang-sub { font-size: .75rem; color: var(--muted); }
+    footer { margin-top: 3.5rem; font-size: .72rem; color: var(--border); text-align: center; }
     :focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
   </style>
 </head>
 <body>
-
-  <div class="lang-pill">
-    <button class="lang-btn active" onclick="setLang('vi', this)">VI</button>
-    <button class="lang-btn" onclick="setLang('en', this)">EN</button>
-  </div>
-
   <div class="logo">✝️</div>
-
   <h1>Bước Theo Chân Chúa</h1>
-
-  <p class="tagline" data-vi>Điểm danh nhà thờ &amp; Cộng đồng đức tin</p>
-  <p class="tagline" data-en style="display:none">Church Check-in &amp; Faith Community</p>
-
+  <p class="tagline">Điểm danh nhà thờ &amp; Cộng đồng đức tin</p>
   <div class="divider"></div>
-
-  <div class="cards">
-    <a class="card" href="terms.html">
-      <div class="card-icon">📋</div>
-      <h2 data-vi>Điều khoản Sử dụng</h2>
-      <h2 data-en style="display:none">Terms of Use</h2>
-      <p data-vi>Quy tắc và điều kiện sử dụng ứng dụng</p>
-      <p data-en style="display:none">Rules and conditions for using the app</p>
+  <p class="prompt">Chọn ngôn ngữ / Select language</p>
+  <div class="lang-cards">
+    <a class="lang-card" href="vn/index.html">
+      <div class="lang-flag">🇻🇳</div>
+      <div class="lang-name">Tiếng Việt</div>
+      <div class="lang-sub">Điều khoản &amp; Bảo mật</div>
     </a>
-    <a class="card" href="privacy.html">
-      <div class="card-icon">🔒</div>
-      <h2 data-vi>Chính sách Bảo mật</h2>
-      <h2 data-en style="display:none">Privacy Policy</h2>
-      <p data-vi>Cách chúng tôi thu thập và bảo vệ dữ liệu của bạn</p>
-      <p data-en style="display:none">How we collect and protect your data</p>
+    <a class="lang-card" href="en/index.html">
+      <div class="lang-flag">🇬🇧</div>
+      <div class="lang-name">English</div>
+      <div class="lang-sub">Terms &amp; Privacy</div>
     </a>
   </div>
-
-  <footer>Cập nhật tháng 6/2026 · Bước Theo Chân Chúa</footer>
-
-  <script>
-    function setLang(lang, btn) {
-      document.documentElement.lang = lang;
-      document.querySelectorAll('[data-vi]').forEach(el => {
-        el.style.display = lang === 'vi' ? '' : 'none';
-      });
-      document.querySelectorAll('[data-en]').forEach(el => {
-        el.style.display = lang === 'en' ? '' : 'none';
-      });
-      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-    }
-  </script>
+  <footer>© 2026 Bước Theo Chân Chúa</footer>
 </body>
 </html>
