@@ -1,0 +1,242 @@
+<title>Xóa Tài khoản – Bước Theo Chân Chúa</title>
+<meta name="description" content="Hướng dẫn xóa tài khoản Bước Theo Chân Chúa và toàn bộ dữ liệu liên quan.">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:         #ffffff;
+    --surface:    #f4f9f6;
+    --border:     #d5e8de;
+    --muted:      #6a8a7a;
+    --body:       #0e1a14;
+    --dim:        #2e4a3c;
+    --accent:     #2e7a5c;
+    --accent-dim: rgba(46,122,92,.10);
+    --accent-ring: rgba(46,122,92,.22);
+    --warn-bg:    #fff8ed;
+    --warn-border: #f0a500;
+    --warn-text:  #7a5800;
+  }
+
+  html { font-size: 16px; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--body);
+    line-height: 1.75;
+  }
+
+  /* ── HEADER ── */
+  .site-header {
+    position: sticky; top: 0; z-index: 20;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 1rem;
+    padding: .75rem 1.5rem;
+  }
+  .site-header a { color: var(--muted); text-decoration: none; font-size: .8rem; letter-spacing: .04em; }
+  .site-header a:hover { color: var(--accent); }
+  .crumb-sep { color: var(--border); margin: 0 .25rem; }
+
+  /* ── LAYOUT ── */
+  .doc { width: 80%; margin: 0 auto; padding: 3.5rem 4rem 5rem; }
+
+  /* ── MASTHEAD ── */
+  .doc-eyebrow {
+    font-size: .7rem; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: .75rem;
+    text-align: center;
+  }
+  .doc-title {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: normal; line-height: 1.2;
+    text-wrap: balance;
+    color: var(--body); margin-bottom: .5rem;
+    text-align: center;
+  }
+  .doc-meta {
+    font-size: .78rem; color: var(--muted);
+    border-top: 1px solid var(--border); padding-top: .75rem;
+    margin-top: .75rem; margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  /* ── PREAMBLE ── */
+  .preamble {
+    background: var(--accent-dim);
+    border: 1px solid var(--accent-ring);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.25rem;
+    margin-bottom: 2.5rem;
+    font-size: .9rem; color: var(--dim);
+  }
+
+  /* ── SECTIONS ── */
+  .doc-section { margin-top: 2.75rem; }
+
+  .section-label {
+    display: flex; align-items: baseline; gap: .6rem;
+    margin-bottom: .6rem;
+  }
+  .section-num {
+    font-family: Georgia, serif;
+    font-size: .75rem; color: var(--accent);
+    letter-spacing: .06em; flex-shrink: 0;
+  }
+  .section-title {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.05rem; font-weight: normal;
+    color: var(--body); letter-spacing: .01em;
+  }
+
+  p { color: var(--dim); margin-bottom: .75rem; font-size: .93rem; }
+  p:last-child { margin-bottom: 0; }
+
+  ul, ol { padding-left: 1.25rem; margin-bottom: .75rem; color: var(--dim); font-size: .93rem; }
+  li { margin-bottom: .35rem; }
+  li::marker { color: var(--accent); }
+  strong { color: var(--body); font-weight: 600; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ── STEPS ── */
+  .steps { counter-reset: step; list-style: none; padding-left: 0; }
+  .steps li {
+    counter-increment: step;
+    font-size: .93rem;
+    color: var(--dim);
+    margin-bottom: .75rem;
+    padding-left: 2.25rem;
+    position: relative;
+    line-height: 1.6;
+  }
+  .steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0; top: .15rem;
+    background: var(--accent);
+    color: #fff;
+    width: 1.4rem; height: 1.4rem;
+    border-radius: 50%;
+    font-size: .72rem;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  /* ── WARNING ── */
+  .warning {
+    background: var(--warn-bg);
+    border: 1px solid rgba(240,165,0,.3);
+    border-left: 3px solid var(--warn-border);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.25rem;
+    font-size: .9rem; color: var(--warn-text);
+    margin-top: .5rem;
+  }
+
+  /* ── DIVIDER / FOOTER ── */
+  .doc-divider { border: none; border-top: 1px solid var(--border); margin: 3rem 0 0; }
+  .doc-footer {
+    margin-top: 1.5rem;
+    display: flex; gap: 1.5rem; flex-wrap: wrap;
+    font-size: .78rem; color: var(--muted);
+  }
+  .doc-footer a { color: var(--muted); text-decoration: none; }
+  .doc-footer a:hover { color: var(--accent); }
+
+  @media (max-width: 640px) { .doc { width: 92%; padding: 2.5rem 1.5rem 4rem; } }
+
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+
+<!-- HEADER -->
+<header class="site-header">
+  <a href="../index.html">Bước Theo Chân Chúa</a>
+  <span class="crumb-sep">›</span>
+  <a href="index.html">Pháp lý</a>
+  <span class="crumb-sep">›</span>
+  <span style="color:var(--body);font-size:.8rem">Xóa Tài khoản</span>
+</header>
+
+<main class="doc">
+
+  <p class="doc-eyebrow">Tài khoản · Bước Theo Chân Chúa</p>
+
+  <h1 class="doc-title">Xóa Tài khoản</h1>
+
+  <p class="doc-meta">Cập nhật 30/06/2026</p>
+
+  <div class="preamble">
+    <p>Trang này hướng dẫn cách xóa vĩnh viễn tài khoản Bước Theo Chân Chúa và toàn bộ dữ liệu liên quan của bạn.</p>
+  </div>
+
+  <!-- § 1 -->
+  <section class="doc-section">
+    <div class="section-label">
+      <span class="section-num">§ 1</span>
+      <h2 class="section-title">Dữ liệu sẽ bị xóa</h2>
+    </div>
+    <p>Khi bạn xóa tài khoản, các thông tin sau sẽ bị xóa vĩnh viễn:</p>
+    <ul>
+      <li>Hồ sơ cá nhân (tên, email, ảnh đại diện)</li>
+      <li>Toàn bộ lịch sử điểm danh</li>
+      <li>Điểm tích lũy và lịch sử điểm</li>
+      <li>Thứ hạng trên bảng xếp hạng</li>
+      <li>Tiến trình nhiệm vụ</li>
+      <li>Chuỗi tham dự (streak)</li>
+      <li>Thành tích đã mở khóa</li>
+    </ul>
+    <p>Thống kê tổng hợp ẩn danh (ví dụ: tổng số lần điểm danh của nhà thờ) có thể được giữ lại mà không gắn với danh tính của bạn.</p>
+  </section>
+
+  <!-- § 2 -->
+  <section class="doc-section">
+    <div class="section-label">
+      <span class="section-num">§ 2</span>
+      <h2 class="section-title">Cách xóa tài khoản trong ứng dụng</h2>
+    </div>
+    <p>Bạn có thể tự xóa tài khoản trực tiếp từ ứng dụng theo các bước sau:</p>
+    <ol class="steps">
+      <li>Mở ứng dụng <strong>Bước Theo Chân Chúa</strong> trên thiết bị của bạn.</li>
+      <li>Chuyển đến tab <strong>Hồ sơ</strong>.</li>
+      <li>Nhấn vào <strong>Cài đặt</strong>.</li>
+      <li>Chọn <strong>Xóa Tài khoản</strong>.</li>
+      <li>Xác nhận hành động khi được nhắc.</li>
+    </ol>
+
+    <div class="warning">
+      ⚠️ Hành động này là <strong>vĩnh viễn và không thể hoàn tác</strong>. Toàn bộ dữ liệu của bạn sẽ bị xóa ngay lập tức và không thể khôi phục.
+    </div>
+  </section>
+
+  <!-- § 3 -->
+  <section class="doc-section">
+    <div class="section-label">
+      <span class="section-num">§ 3</span>
+      <h2 class="section-title">Yêu cầu xóa qua email</h2>
+    </div>
+    <p>Nếu bạn không thể truy cập ứng dụng hoặc gặp khó khăn khi thực hiện, hãy gửi email yêu cầu xóa tài khoản đến <a href="mailto:pcngocthach@gmail.com">pcngocthach@gmail.com</a> với tiêu đề <strong>"Yêu cầu xóa tài khoản"</strong> và địa chỉ email đã đăng ký tài khoản của bạn.</p>
+    <p>Chúng tôi sẽ xử lý yêu cầu và xóa dữ liệu cá nhân của bạn trong vòng <strong>30 ngày</strong>.</p>
+  </section>
+
+  <!-- § 4 -->
+  <section class="doc-section">
+    <div class="section-label">
+      <span class="section-num">§ 4</span>
+      <h2 class="section-title">Liên hệ hỗ trợ</h2>
+    </div>
+    <p>Cần hỗ trợ thêm? Liên hệ chúng tôi tại <a href="mailto:pcngocthach@gmail.com">pcngocthach@gmail.com</a>. Chúng tôi cố gắng phản hồi trong vòng 30 ngày.</p>
+  </section>
+
+  <hr class="doc-divider">
+  <footer class="doc-footer">
+    <a href="../index.html">← Legal Home</a>
+    <a href="privacy.html">Chính sách Bảo mật</a>
+    <a href="terms.html">Điều khoản Sử dụng</a>
+    <span style="margin-left:auto">© 2026 Bước Theo Chân Chúa</span>
+  </footer>
+
+</main>
