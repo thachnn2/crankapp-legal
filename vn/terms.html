@@ -1,321 +1,406 @@
-<title>Điều khoản Sử dụng – Bước Theo Chân Chúa</title>
-<meta name="description" content="Bước Theo Chân Chúa Terms of Use — rules and conditions for using the church check-in and gamification app.">
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Điều khoản Sử dụng – Giờ Lễ & Lịch Công Giáo</title>
+<meta name="description" content="Điều khoản Sử dụng Bước Theo Chân Chúa — quy tắc và điều kiện khi dùng ứng dụng điểm danh nhà thờ và gamification.">
+<link rel="canonical" href="https://docs.thachnguyenhub.com/vn/terms.html">
+<link rel="alternate" hreflang="en" href="https://docs.thachnguyenhub.com/en/terms.html">
+<link rel="alternate" hreflang="vi" href="https://docs.thachnguyenhub.com/vn/terms.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.thachnguyenhub.com/vn/terms.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Giờ Lễ & Lịch Công Giáo">
+<meta property="og:title" content="Điều khoản Sử dụng – Giờ Lễ & Lịch Công Giáo">
+<meta property="og:description" content="Điều khoản Sử dụng Bước Theo Chân Chúa — quy tắc và điều kiện khi dùng ứng dụng điểm danh nhà thờ và gamification.">
+<meta property="og:url" content="https://docs.thachnguyenhub.com/vn/terms.html">
+<meta property="og:image" content="https://docs.thachnguyenhub.com/assets/og/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Điều khoản Sử dụng – Giờ Lễ & Lịch Công Giáo">
+<meta name="twitter:description" content="Điều khoản Sử dụng Bước Theo Chân Chúa — quy tắc và điều kiện khi dùng ứng dụng điểm danh nhà thờ và gamification.">
+<meta name="twitter:image" content="https://docs.thachnguyenhub.com/assets/og/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg:         #ffffff;
-    --surface:    #f7f4ef;
-    --border:     #e5dfd5;
-    --muted:      #9a8a72;
-    --body:       #1a1208;
-    --dim:        #4a3e2c;
-    --accent:     #a07828;
-    --accent-dim: rgba(160,120,40,.10);
-    --accent-ring: rgba(160,120,40,.25);
+    --bg:          #F7F4EA;
+    --surface:     #FFFFFF;
+    --surface-soft:#E2EEE4;
+    --border:      #EEF1EA;
+    --text:        #1F2A22;
+    --text-dim:    #4A5A4F;
+    --text-mute:   #3A4A40;
+    --muted:       #8A978E;
+    --green-deep:  #14492F;
+    --green:       #1E6B47;
+    --green-mid:   #2C7E53;
+    --green-light: #3E9A63;
+    --green-light2:#378F5C;
+    --cream-strong:#F6E7B8;
+    --cream:       #F5F0E3;
+    --on-dark-dim: #CFE3D5;
+    --callout-bg:  #FBF1D9;
+    --callout-text:#6B4E16;
+    --danger-bg:   #FBE3E1;
+    --danger:      #B23A3A;
+    --shadow: 0 1px 2px rgba(20,73,47,.06), 0 6px 18px rgba(20,73,47,.05);
   }
 
   html { font-size: 16px; }
-
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-    background: var(--bg);
-    color: var(--body);
-    line-height: 1.75;
+    font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.6;
   }
+  a { color: inherit; text-decoration: none; }
+  strong { font-weight: 700; color: var(--green-deep); }
 
-  /* ── HEADER ── */
-  .site-header {
-    position: sticky; top: 0; z-index: 20;
-    background: var(--bg);
-    border-bottom: 1px solid var(--border);
-    display: flex; align-items: center; gap: 1rem;
-    padding: .75rem 1.5rem;
+  /* ── HERO ── */
+  .hero {
+    position: relative; overflow: hidden;
+    background: var(--green); color: var(--cream);
+    padding: 24px 24px 72px;
   }
-  .site-header a {
-    color: var(--muted); text-decoration: none; font-size: .8rem;
-    letter-spacing: .04em;
+  .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .hero-top {
+    position: relative; z-index: 1;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 12px; max-width: 1200px; margin: 0 auto 48px;
   }
-  .site-header a:hover { color: var(--accent); }
-  .crumb-sep { color: var(--border); margin: 0 .25rem; }
-  .lang-switch { margin-left: auto; display: flex; align-items: center; font-size: .75rem; letter-spacing: .05em; }
-  .lang-current { color: var(--body); font-weight: 600; }
-  .lang-sep { color: var(--border); }
-
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.05rem; color: var(--cream); flex-shrink: 0; }
+  .brand svg { width: 32px; height: 32px; flex-shrink: 0; }
+  .lang-pill { height: 34px; padding: 3px; border-radius: 17px; background: var(--green-mid); display: flex; font-size: .78rem; font-weight: 600; flex-shrink: 0; }
+  .lang-pill a, .lang-pill span { padding: 0 13px; border-radius: 14px; display: flex; align-items: center; }
+  .lang-pill .active { background: var(--cream-strong); color: var(--green-deep); }
+  .lang-pill a { color: var(--on-dark-dim); }
+  .hero-content { position: relative; z-index: 1; max-width: 760px; margin: 0 auto; }
+  .crumb { font-size: .85rem; color: var(--on-dark-dim); margin-bottom: 14px; }
+  .crumb a:hover { text-decoration: underline; }
+  .hero-content h1 { font-size: clamp(1.7rem, 4vw, 2.3rem); font-weight: 800; line-height: 1.2; margin-bottom: 10px; }
+  .hero-meta { font-size: .85rem; color: var(--on-dark-dim); font-weight: 500; }
 
   /* ── LAYOUT ── */
-  .doc { width: 80%; margin: 0 auto; padding: 3.5rem 4rem 5rem; }
-
-  /* ── MASTHEAD ── */
-  .doc-eyebrow {
-    font-size: .7rem; letter-spacing: .14em; text-transform: uppercase;
-    color: var(--accent); margin-bottom: .75rem;
-    text-align: center;
+  .layout {
+    max-width: 1200px; margin: 0 auto;
+    padding: 0 24px 72px;
+    display: flex; gap: 48px; align-items: flex-start;
   }
-  .doc-title {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
-    font-weight: normal; line-height: 1.2;
-    text-wrap: balance;
-    color: var(--body); margin-bottom: .5rem;
-    text-align: center;
-  }
-  .doc-meta {
-    font-size: .78rem; color: var(--muted);
-    border-top: 1px solid var(--border); padding-top: .75rem;
-    margin-top: .75rem; margin-bottom: 2.5rem;
-    text-align: center;
-  }
+  .content { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 20px; }
 
-  /* ── PREAMBLE BOX ── */
-  .preamble {
-    background: var(--accent-dim);
-    border: 1px solid var(--accent-ring);
-    border-left: 3px solid var(--accent);
-    border-radius: 0 8px 8px 0;
-    padding: 1rem 1.25rem;
-    margin-bottom: 2.5rem;
-    font-size: .9rem; color: var(--dim);
+  .toc {
+    width: 250px; flex-shrink: 0; position: sticky; top: 24px;
+    display: flex; flex-direction: column; gap: 2px;
+    padding: 14px; border-radius: 18px;
+    background: var(--surface); box-shadow: var(--shadow);
   }
-
-  /* ── SECTIONS ── */
-  .doc-section { margin-top: 2.75rem; }
-
-  .section-label {
-    display: flex; align-items: baseline; gap: .6rem;
-    margin-bottom: .6rem;
+  .toc-label { padding: 6px 12px 10px; font-size: .78rem; font-weight: 700; color: var(--green-light); letter-spacing: .05em; }
+  .toc a {
+    padding: 8px 12px; border-radius: 10px; display: flex; gap: 10px;
+    font-size: .88rem; line-height: 1.3; color: var(--text-mute); font-weight: 400;
   }
-  .section-num {
-    font-family: Georgia, serif;
-    font-size: .75rem; color: var(--accent);
-    letter-spacing: .06em; flex-shrink: 0;
-    padding-top: .05rem;
+  .toc a:hover { background: rgba(226,238,228,.6); }
+  .toc a.active { background: var(--surface-soft); color: var(--green-deep); font-weight: 600; }
+  .toc a span.n { width: 22px; flex-shrink: 0; color: var(--muted); }
+
+  .intro { font-size: 1rem; line-height: 1.7; color: var(--text-dim); max-width: 70ch; }
+
+  /* ── HIGHLIGHT CARDS ── */
+  .highlights { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .hl-card { padding: 20px; border-radius: 18px; background: var(--green); display: flex; flex-direction: column; gap: 10px; }
+  .hl-icon { width: 40px; height: 40px; border-radius: 20px; background: var(--cream-strong); display: flex; align-items: center; justify-content: center; }
+  .hl-card h3 { font-size: 1rem; font-weight: 700; color: var(--cream); }
+  .hl-card p { font-size: .82rem; line-height: 1.4; color: var(--on-dark-dim); }
+
+  /* ── SECTION CARDS ── */
+  .sec { padding: 32px 36px; border-radius: 22px; background: var(--surface); box-shadow: var(--shadow); scroll-margin-top: 24px; }
+  .sec-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+  .sec-badge {
+    width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0;
+    background: var(--surface-soft); color: var(--green-deep);
+    display: flex; align-items: center; justify-content: center;
+    font-size: .85rem; font-weight: 700;
   }
-  .section-title {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 1.05rem; font-weight: normal;
-    color: var(--body); letter-spacing: .01em;
+  .sec h2 { font-size: 1.4rem; font-weight: 700; color: var(--green-deep); }
+  .sec > p { font-size: 1rem; line-height: 1.7; color: var(--text-dim); margin-bottom: 14px; }
+  .sec > p:last-child { margin-bottom: 0; }
+
+  .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+  .feature-grid .f { padding: 16px 18px; border-radius: 16px; background: var(--bg); display: flex; flex-direction: column; gap: 4px; }
+  .feature-grid .f strong { font-size: .92rem; }
+  .feature-grid .f span { font-size: .85rem; line-height: 1.5; color: var(--text-mute); }
+
+  .marklist { display: flex; flex-direction: column; gap: 12px; margin-bottom: 14px; }
+  .marklist li { list-style: none; display: flex; gap: 12px; font-size: .97rem; line-height: 1.6; color: var(--text-mute); }
+  .mark { width: 18px; height: 18px; margin-top: 4px; flex-shrink: 0; border-radius: 9px; display: flex; align-items: center; justify-content: center; }
+  .mark.ok { background: var(--surface-soft); }
+  .mark.no { background: var(--danger-bg); }
+
+  .callout { padding: 14px 16px; border-radius: 14px; background: var(--callout-bg); color: var(--callout-text); font-size: .92rem; line-height: 1.5; }
+
+  /* ── CTA BANNER ── */
+  .cta {
+    padding: 28px 36px; border-radius: 22px; background: var(--green-deep);
+    display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;
   }
-
-  p { color: var(--dim); margin-bottom: .75rem; font-size: .93rem; }
-  p:last-child { margin-bottom: 0; }
-
-  ul, ol {
-    padding-left: 1.25rem; margin-bottom: .75rem; color: var(--dim); font-size: .93rem;
-  }
-  li { margin-bottom: .35rem; }
-  li::marker { color: var(--accent); }
-
-  strong { color: var(--body); font-weight: 600; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-
-  /* ── DIVIDER ── */
-  .doc-divider {
-    border: none; border-top: 1px solid var(--border);
-    margin: 3rem 0 0;
+  .cta h3 { font-size: 1.3rem; font-weight: 700; color: var(--cream); margin-bottom: 4px; }
+  .cta p { font-size: .9rem; color: var(--on-dark-dim); }
+  .cta a {
+    height: 50px; padding: 0 22px; border-radius: 25px; background: var(--cream-strong);
+    display: flex; align-items: center; gap: 10px; font-size: .95rem; font-weight: 700; color: var(--green-deep);
+    white-space: nowrap; flex-shrink: 0;
   }
 
   /* ── FOOTER ── */
-  .doc-footer {
-    margin-top: 1.5rem;
-    display: flex; gap: 1.5rem; flex-wrap: wrap;
-    font-size: .78rem; color: var(--muted);
+  .site-footer {
+    padding: 36px 24px; background: var(--green-deep); color: var(--on-dark-dim);
+    font-size: .88rem; display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 16px;
   }
-  .doc-footer a { color: var(--muted); text-decoration: none; }
-  .doc-footer a:hover { color: var(--accent); }
+  .site-footer .links { display: flex; gap: 24px; flex-wrap: wrap; }
+  .site-footer a:hover { color: var(--cream); }
 
-  /* ── LANG VISIBILITY ── */
+  @media (max-width: 880px) {
+    .layout { flex-direction: column; padding: 0 16px 56px; gap: 28px; }
+    .toc { width: 100%; position: static; }
+    .toc a.active { order: -1; }
+    .highlights { grid-template-columns: 1fr; }
+    .feature-grid { grid-template-columns: 1fr; }
+    .sec { padding: 24px 20px; }
+    .hero { padding: 20px 16px 56px; }
+    .hero-top { margin-bottom: 36px; }
+    .cta { padding: 24px; }
+    .site-footer { flex-direction: column; align-items: flex-start; }
+  }
 
-  /* ── FOCUS ── */
-  @media (max-width: 640px) { .doc { width: 92%; } }
-
-  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  :focus-visible { outline: 2px solid var(--green-light); outline-offset: 2px; }
 </style>
-
-<!-- HEADER -->
-<header class="site-header">
-  <a href="../index.html">Bước Theo Chân Chúa</a>
-  <span class="crumb-sep">›</span>
-  <span style="color:var(--body);font-size:.8rem">Điều khoản Sử dụng</span>
-  <div class="lang-switch">
-    <span class="lang-current">🇻🇳 VI</span>
-    <span class="lang-sep">&nbsp;|&nbsp;</span>
-    <a href="../en/terms.html">EN 🇬🇧</a>
+</head>
+<body>
+<header class="hero">
+  <svg class="hero-bg" viewBox="0 0 1440 360" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <g fill="#2C7E53">
+      <rect x="980" y="170" width="240" height="36" rx="18"></rect>
+      <circle cx="1040" cy="166" r="30"></circle>
+      <circle cx="1090" cy="152" r="38"></circle>
+      <rect x="1240" y="120" width="220" height="30" rx="15"></rect>
+      <circle cx="1310" cy="116" r="26"></circle>
+    </g>
+    <circle cx="1180" cy="220" r="110" fill="#F6E7B8"></circle>
+    <g fill="#1E6B47">
+      <rect x="1172" y="150" width="16" height="140" rx="2"></rect>
+      <rect x="1140" y="186" width="80" height="16" rx="2"></rect>
+    </g>
+    <path d="M0,300 C360,270 1080,262 1440,290 L1440,360 L0,360 Z" fill="#3E9A63"></path>
+    <path d="M0,340 C420,322 980,338 1440,316 L1440,360 L0,360 Z" fill="#378F5C"></path>
+  </svg>
+  <div class="hero-top">
+    <a class="brand" href="../index.html">
+      <svg viewBox="0 0 512 512" aria-hidden="true">
+        <defs><clipPath id="tLogo"><rect width="512" height="512" rx="112"></rect></clipPath></defs>
+        <g clip-path="url(#tLogo)">
+          <rect width="512" height="512" fill="#14492F"></rect>
+          <circle cx="256" cy="262" r="96" fill="#F6E7B8"></circle>
+          <path d="M0,318 C140,268 372,268 512,318 L512,512 L0,512 Z" fill="#3E9A63"></path>
+          <path d="M150,512 C200,440 300,420 268,360 C254,334 250,296 250,284 L262,284 C266,300 286,334 300,358 C344,424 290,456 362,512 Z" fill="#F5F0E3"></path>
+          <g fill="#14492F"><rect x="246" y="186" width="20" height="100" rx="2"></rect><rect x="222" y="214" width="68" height="20" rx="2"></rect></g>
+        </g>
+      </svg>
+      Giờ Lễ & Lịch Công Giáo
+    </a>
+    <div class="lang-pill">
+      <span class="active">VI</span>
+      <a href="../en/terms.html">EN</a>
+    </div>
+  </div>
+  <div class="hero-content">
+    <p class="crumb"><a href="../index.html">Pháp lý</a> › Điều khoản Sử dụng</p>
+    <h1>Điều khoản Sử dụng</h1>
+    <p class="hero-meta">Có hiệu lực 29/06/2026 &nbsp;·&nbsp; Cập nhật lần cuối 29/06/2026</p>
   </div>
 </header>
 
-<!-- DOCUMENT -->
-<main class="doc">
+<main class="layout">
+  <nav class="toc" aria-label="Mục lục">
+    <div class="toc-label">MỤC LỤC</div>
+    <a href="#dk-1" class="active"><span class="n">§1</span>Chấp nhận Điều khoản</a>
+    <a href="#dk-2"><span class="n">§2</span>Mô tả Dịch vụ</a>
+    <a href="#dk-3"><span class="n">§3</span>Tài khoản Người dùng</a>
+    <a href="#dk-4"><span class="n">§4</span>Dịch vụ Vị trí</a>
+    <a href="#dk-5"><span class="n">§5</span>Điểm thưởng và Gamification</a>
+    <a href="#dk-6"><span class="n">§6</span>Sử dụng Hợp lệ</a>
+    <a href="#dk-7"><span class="n">§7</span>Các Tổ chức Nhà thờ</a>
+    <a href="#dk-8"><span class="n">§8</span>Sở hữu Trí tuệ</a>
+    <a href="#dk-9"><span class="n">§9</span>Miễn trừ Bảo đảm</a>
+    <a href="#dk-10"><span class="n">§10</span>Giới hạn Trách nhiệm</a>
+    <a href="#dk-11"><span class="n">§11</span>Chấm dứt Tài khoản</a>
+    <a href="#dk-12"><span class="n">§12</span>Thay đổi Điều khoản</a>
+    <a href="#dk-13"><span class="n">§13</span>Luật Điều chỉnh</a>
+    <a href="#dk-14"><span class="n">§14</span>Liên hệ</a>
+  </nav>
 
-  <p class="doc-eyebrow">Pháp lý · Bước Theo Chân Chúa</p>
+  <div class="content">
+    <p class="intro">Bằng cách tải xuống hoặc sử dụng Bước Theo Chân Chúa, bạn đồng ý với các Điều khoản này. Vui lòng đọc kỹ trước khi sử dụng ứng dụng.</p>
 
-  <h1 class="doc-title">Điều khoản Sử dụng</h1>
+    <div class="highlights">
+      <div class="hl-card">
+        <div class="hl-icon"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v4a5 5 0 0 1-10 0z M12 13v4 M8 21h8 M9 17h6" fill="none" stroke="#1E6B47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+        <h3>Điểm không quy ra tiền</h3>
+        <p>Điểm, thành tích và thứ hạng không có giá trị tiền tệ.</p>
+      </div>
+      <div class="hl-card">
+        <div class="hl-icon"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z M9 10l2 2 4-4" fill="none" stroke="#1E6B47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+        <h3>Điểm danh trung thực</h3>
+        <p>Giả mạo GPS hoặc dùng bot có thể bị khóa tài khoản.</p>
+      </div>
+      <div class="hl-card">
+        <div class="hl-icon"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0.01 0 M4 21c1-4 4-6 8-6s7 2 8 6" fill="none" stroke="#1E6B47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+        <h3>Từ 13 tuổi trở lên</h3>
+        <p>Dưới 18 tuổi cần có sự đồng ý của cha mẹ hoặc người giám hộ.</p>
+      </div>
+    </div>
 
-  <p class="doc-meta">Có hiệu lực 29/06/2026 &nbsp;·&nbsp; Cập nhật lần cuối 29/06/2026</p>
+    <section class="sec" id="dk-1">
+      <div class="sec-head"><span class="sec-badge">1</span><h2>Chấp nhận Điều khoản</h2></div>
+      <p>Các Điều khoản Sử dụng này ("Điều khoản") điều chỉnh quyền truy cập và sử dụng Bước Theo Chân Chúa ("Ứng dụng") — ứng dụng di động dành cho điểm danh nhà thờ và gắn kết cộng đồng. Bằng cách tạo tài khoản hoặc sử dụng Ứng dụng, bạn xác nhận đã đọc, hiểu và đồng ý bị ràng buộc bởi các Điều khoản này.</p>
+    </section>
 
-  <div class="preamble">
-    <p>Bằng cách tải xuống hoặc sử dụng Bước Theo Chân Chúa, bạn đồng ý với các Điều khoản này. Vui lòng đọc kỹ trước khi sử dụng ứng dụng.</p>
+    <section class="sec" id="dk-2">
+      <div class="sec-head"><span class="sec-badge">2</span><h2>Mô tả Dịch vụ</h2></div>
+      <p>Bước Theo Chân Chúa cung cấp các tính năng sau:</p>
+      <div class="feature-grid">
+        <div class="f"><strong>Điểm danh GPS</strong><span>Xác minh sự tham dự tại địa điểm nhà thờ thông qua GPS của thiết bị.</span></div>
+        <div class="f"><strong>Bảng xếp hạng</strong><span>Xem bảng xếp hạng tham dự cộng đồng giữa các thành viên.</span></div>
+        <div class="f"><strong>Nhiệm vụ và Thành tích</strong><span>Hoàn thành các nhiệm vụ để tích điểm và mở khóa thành tích.</span></div>
+        <div class="f"><strong>Chuỗi tham dự</strong><span>Theo dõi và ghi nhận chuỗi tham dự liên tiếp.</span></div>
+        <div class="f"><strong>Danh sách nhà thờ</strong><span>Tìm kiếm và khám phá các nhà thờ gần bạn.</span></div>
+      </div>
+    </section>
+
+    <section class="sec" id="dk-3">
+      <div class="sec-head"><span class="sec-badge">3</span><h2>Tài khoản Người dùng</h2></div>
+      <p>Để sử dụng Bước Theo Chân Chúa bạn phải đăng ký tài khoản. Bạn đồng ý:</p>
+      <ul class="marklist">
+        <li><span class="mark ok"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#1E6B47" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Cung cấp thông tin đăng ký chính xác, cập nhật và đầy đủ.</li>
+        <li><span class="mark ok"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#1E6B47" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Giữ bí mật mật khẩu và không chia sẻ với người khác.</li>
+        <li><span class="mark ok"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#1E6B47" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Thông báo ngay nếu phát hiện truy cập trái phép vào tài khoản của bạn.</li>
+        <li><span class="mark ok"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#1E6B47" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Chịu trách nhiệm về tất cả hoạt động diễn ra dưới tài khoản của bạn.</li>
+      </ul>
+      <div class="callout">Bạn phải ít nhất 13 tuổi để tạo tài khoản. Người dùng dưới 18 tuổi phải có sự đồng ý của cha mẹ hoặc người giám hộ.</div>
+    </section>
+
+    <section class="sec" id="dk-4">
+      <div class="sec-head"><span class="sec-badge">4</span><h2>Dịch vụ Vị trí</h2></div>
+      <p>Tính năng điểm danh yêu cầu quyền truy cập GPS của thiết bị. Khi sử dụng tính năng này, bạn đồng ý rằng:</p>
+      <ul class="marklist">
+        <li><span class="mark ok"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#1E6B47" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Dữ liệu vị trí chỉ dùng để xác minh sự hiện diện thực tế tại địa điểm nhà thờ.</li>
+        <li><span class="mark ok"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#1E6B47" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Vị trí chỉ được truy cập tại thời điểm điểm danh — Ứng dụng không theo dõi bạn khi chạy nền.</li>
+      </ul>
+      <div class="callout">Giả mạo vị trí GPS để điểm danh gian lận là vi phạm Điều khoản và có thể bị khóa tài khoản.</div>
+    </section>
+
+    <section class="sec" id="dk-5">
+      <div class="sec-head"><span class="sec-badge">5</span><h2>Điểm thưởng và Gamification</h2></div>
+      <p>Điểm thưởng, thành tích, chuỗi tham dự và thứ hạng không có giá trị tiền tệ và không thể đổi lấy tiền hoặc hàng hóa. Chúng tôi có quyền điều chỉnh giá trị điểm, tiêu chí nhiệm vụ hoặc quy tắc thành tích bất kỳ lúc nào, và xóa điểm thu được qua gian lận.</p>
+    </section>
+
+    <section class="sec" id="dk-6">
+      <div class="sec-head"><span class="sec-badge">6</span><h2>Sử dụng Hợp lệ</h2></div>
+      <p>Bạn đồng ý không:</p>
+      <ul class="marklist">
+        <li><span class="mark no"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12 M18 6L6 18" fill="none" stroke="#B23A3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Sử dụng Ứng dụng cho mục đích bất hợp pháp.</li>
+        <li><span class="mark no"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12 M18 6L6 18" fill="none" stroke="#B23A3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Cố truy cập trái phép vào tài khoản người dùng khác hoặc máy chủ của chúng tôi.</li>
+        <li><span class="mark no"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12 M18 6L6 18" fill="none" stroke="#B23A3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Dùng script tự động, bot hoặc công cụ bên thứ ba để thao túng điểm danh, điểm số hoặc xếp hạng.</li>
+        <li><span class="mark no"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12 M18 6L6 18" fill="none" stroke="#B23A3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Quấy rối hoặc gây hại cho người dùng khác qua bất kỳ tính năng nào.</li>
+        <li><span class="mark no"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12 M18 6L6 18" fill="none" stroke="#B23A3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Dịch ngược hoặc cố gắng trích xuất mã nguồn của Ứng dụng.</li>
+      </ul>
+    </section>
+
+    <section class="sec" id="dk-7">
+      <div class="sec-head"><span class="sec-badge">7</span><h2>Các Tổ chức Nhà thờ</h2></div>
+      <p>Các nhà thờ được liệt kê trong Ứng dụng là tổ chức độc lập. Bước Theo Chân Chúa không liên kết, được chứng thực bởi, hoặc chịu trách nhiệm về bất kỳ nhà thờ nào, giáo lý, sự kiện hoặc hoạt động của họ. Chúng tôi chỉ liệt kê nhà thờ cho mục đích danh bạ và điểm danh.</p>
+    </section>
+
+    <section class="sec" id="dk-8">
+      <div class="sec-head"><span class="sec-badge">8</span><h2>Sở hữu Trí tuệ</h2></div>
+      <p>Tất cả nội dung, thiết kế, đồ họa và mã nguồn của Bước Theo Chân Chúa thuộc quyền sở hữu của nhà phát triển và được bảo vệ theo luật sở hữu trí tuệ. Bạn được cấp giấy phép hạn chế, không độc quyền, không thể chuyển nhượng để sử dụng Ứng dụng cho mục đích cá nhân, phi thương mại.</p>
+    </section>
+
+    <section class="sec" id="dk-9">
+      <div class="sec-head"><span class="sec-badge">9</span><h2>Miễn trừ Bảo đảm</h2></div>
+      <p>Ứng dụng được cung cấp "nguyên trạng" và "theo hiện trạng" mà không có bất kỳ bảo đảm nào. Chúng tôi không đảm bảo Ứng dụng hoạt động liên tục, không có lỗi, hoặc mọi lỗi sẽ được khắc phục. Việc sử dụng Ứng dụng là rủi ro của riêng bạn.</p>
+    </section>
+
+    <section class="sec" id="dk-10">
+      <div class="sec-head"><span class="sec-badge">10</span><h2>Giới hạn Trách nhiệm</h2></div>
+      <p>Trong phạm vi tối đa được pháp luật cho phép, chúng tôi không chịu trách nhiệm về bất kỳ thiệt hại gián tiếp, ngẫu nhiên hoặc hệ quả nào phát sinh từ việc bạn sử dụng Ứng dụng, bao gồm mất dữ liệu, hỏng thiết bị hoặc mất hồ sơ tham dự.</p>
+    </section>
+
+    <section class="sec" id="dk-11">
+      <div class="sec-head"><span class="sec-badge">11</span><h2>Chấm dứt Tài khoản</h2></div>
+      <p>Bạn có thể xóa tài khoản bất kỳ lúc nào từ trong Ứng dụng. Chúng tôi có quyền đình chỉ hoặc chấm dứt vĩnh viễn bất kỳ tài khoản nào vi phạm Điều khoản này, thực hiện gian lận hoặc gây rủi ro bảo mật.</p>
+    </section>
+
+    <section class="sec" id="dk-12">
+      <div class="sec-head"><span class="sec-badge">12</span><h2>Thay đổi Điều khoản</h2></div>
+      <p>Chúng tôi có thể cập nhật Điều khoản theo thời gian. Khi đó, chúng tôi sẽ cập nhật ngày "Cập nhật lần cuối". Việc tiếp tục sử dụng Ứng dụng sau khi có thay đổi cấu thành sự chấp nhận Điều khoản mới.</p>
+    </section>
+
+    <section class="sec" id="dk-13">
+      <div class="sec-head"><span class="sec-badge">13</span><h2>Luật Điều chỉnh</h2></div>
+      <p>Các Điều khoản này được điều chỉnh bởi pháp luật Việt Nam. Tranh chấp sẽ được giải quyết tại tòa án có thẩm quyền tại Thành phố Hồ Chí Minh, Việt Nam.</p>
+    </section>
+
+    <section class="sec" id="dk-14">
+      <div class="sec-head"><span class="sec-badge">14</span><h2>Liên hệ</h2></div>
+      <p>Câu hỏi về Điều khoản? Gửi email đến <a href="mailto:support@thachnguyenhub.com" style="color:var(--green);text-decoration:underline">support@thachnguyenhub.com</a> — chúng tôi cố gắng phản hồi trong vòng 14 ngày.</p>
+    </section>
+
+    <div class="cta">
+      <div>
+        <h3>Có câu hỏi về Điều khoản?</h3>
+        <p>Chúng tôi cố gắng phản hồi trong vòng 14 ngày.</p>
+      </div>
+      <a href="mailto:support@thachnguyenhub.com">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z M3 7l9 6 9-6" fill="none" stroke="#14492F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        support@thachnguyenhub.com
+      </a>
+    </div>
   </div>
-
-  <!-- § 1 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 1</span>
-      <h2 class="section-title">Chấp nhận Điều khoản</h2>
-    </div>
-    <p>Các Điều khoản Sử dụng này điều chỉnh quyền truy cập và sử dụng Bước Theo Chân Chúa — ứng dụng di động dành cho điểm danh nhà thờ và gắn kết cộng đồng. Bằng cách tạo tài khoản hoặc sử dụng Ứng dụng, bạn xác nhận đã đọc, hiểu và đồng ý bị ràng buộc bởi các Điều khoản này.</p>
-  </section>
-
-  <!-- § 2 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 2</span>
-      <h2 class="section-title">Mô tả Dịch vụ</h2>
-    </div>
-    <p>Bước Theo Chân Chúa cung cấp các tính năng sau:</p>
-    <ul>
-      <li><strong>Điểm danh GPS</strong> — Xác minh sự tham dự tại địa điểm nhà thờ thông qua GPS của thiết bị.</li>
-      <li><strong>Bảng xếp hạng</strong> — Xem bảng xếp hạng tham dự cộng đồng giữa các thành viên.</li>
-      <li><strong>Nhiệm vụ và Thành tích</strong> — Hoàn thành các nhiệm vụ để tích điểm và mở khóa thành tích.</li>
-      <li><strong>Chuỗi tham dự</strong> — Theo dõi và ghi nhận chuỗi tham dự liên tiếp.</li>
-      <li><strong>Danh sách nhà thờ</strong> — Tìm kiếm và khám phá các nhà thờ gần bạn.</li>
-    </ul>
-  </section>
-
-  <!-- § 3 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 3</span>
-      <h2 class="section-title">Tài khoản Người dùng</h2>
-    </div>
-    <p>Để sử dụng Bước Theo Chân Chúa bạn phải đăng ký tài khoản. Bạn đồng ý:</p>
-    <ul>
-      <li>Cung cấp thông tin đăng ký chính xác, cập nhật và đầy đủ.</li>
-      <li>Giữ bí mật mật khẩu và không chia sẻ với người khác.</li>
-      <li>Thông báo ngay nếu phát hiện truy cập trái phép vào tài khoản của bạn.</li>
-      <li>Chịu trách nhiệm về tất cả hoạt động diễn ra dưới tài khoản của bạn.</li>
-    </ul>
-    <p>Bạn phải ít nhất 13 tuổi để tạo tài khoản. Người dùng dưới 18 tuổi phải có sự đồng ý của cha mẹ hoặc người giám hộ.</p>
-  </section>
-
-  <!-- § 4 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 4</span>
-      <h2 class="section-title">Dịch vụ Vị trí</h2>
-    </div>
-    <p>Tính năng điểm danh yêu cầu quyền truy cập GPS của thiết bị. Khi sử dụng tính năng này, bạn đồng ý rằng:</p>
-    <ul>
-      <li>Dữ liệu vị trí chỉ dùng để xác minh sự hiện diện thực tế tại địa điểm nhà thờ.</li>
-      <li>Vị trí chỉ được truy cập tại thời điểm điểm danh — Ứng dụng không theo dõi bạn nền (background).</li>
-      <li>Giả mạo vị trí GPS để điểm danh gian lận là vi phạm Điều khoản và có thể bị khóa tài khoản.</li>
-    </ul>
-  </section>
-
-  <!-- § 5 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 5</span>
-      <h2 class="section-title">Điểm thưởng và Gamification</h2>
-    </div>
-    <p>Điểm thưởng, thành tích, chuỗi tham dự và thứ hạng không có giá trị tiền tệ và không thể đổi lấy tiền hoặc hàng hóa. Chúng tôi có quyền điều chỉnh giá trị điểm, tiêu chí nhiệm vụ hoặc quy tắc thành tích bất kỳ lúc nào, và xóa điểm thu được qua gian lận.</p>
-  </section>
-
-  <!-- § 6 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 6</span>
-      <h2 class="section-title">Sử dụng Hợp lệ</h2>
-    </div>
-    <p>Bạn đồng ý không:</p>
-    <ul>
-      <li>Sử dụng Ứng dụng cho mục đích bất hợp pháp.</li>
-      <li>Cố truy cập trái phép vào tài khoản người dùng khác hoặc máy chủ của chúng tôi.</li>
-      <li>Dùng script tự động, bot hoặc công cụ bên thứ ba để thao túng điểm danh, điểm số hoặc xếp hạng.</li>
-      <li>Quấy rối hoặc gây hại cho người dùng khác qua bất kỳ tính năng nào.</li>
-      <li>Dịch ngược hoặc cố gắng trích xuất mã nguồn của Ứng dụng.</li>
-    </ul>
-  </section>
-
-  <!-- § 7 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 7</span>
-      <h2 class="section-title">Các Tổ chức Nhà thờ</h2>
-    </div>
-    <p>Các nhà thờ được liệt kê trong Ứng dụng là tổ chức độc lập. Bước Theo Chân Chúa không liên kết, được chứng thực bởi, hoặc chịu trách nhiệm về bất kỳ nhà thờ nào, giáo lý, sự kiện hoặc hoạt động của họ. Chúng tôi chỉ liệt kê nhà thờ cho mục đích danh bạ và điểm danh.</p>
-  </section>
-
-  <!-- § 8 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 8</span>
-      <h2 class="section-title">Sở hữu Trí tuệ</h2>
-    </div>
-    <p>Tất cả nội dung, thiết kế, đồ họa và mã nguồn của Bước Theo Chân Chúa thuộc quyền sở hữu của nhà phát triển và được bảo vệ theo luật sở hữu trí tuệ. Bạn được cấp giấy phép hạn chế, không độc quyền để sử dụng Ứng dụng cho mục đích cá nhân, phi thương mại.</p>
-  </section>
-
-  <!-- § 9 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 9</span>
-      <h2 class="section-title">Miễn trừ Bảo đảm</h2>
-    </div>
-    <p>Ứng dụng được cung cấp "nguyên trạng" và "theo hiện trạng" mà không có bất kỳ bảo đảm nào. Chúng tôi không đảm bảo Ứng dụng hoạt động liên tục hoặc không có lỗi. Việc sử dụng Ứng dụng là rủi ro của riêng bạn.</p>
-  </section>
-
-  <!-- § 10 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 10</span>
-      <h2 class="section-title">Giới hạn Trách nhiệm</h2>
-    </div>
-    <p>Trong phạm vi tối đa được pháp luật cho phép, chúng tôi không chịu trách nhiệm về bất kỳ thiệt hại gián tiếp hoặc ngẫu nhiên nào phát sinh từ việc bạn sử dụng Ứng dụng, bao gồm mất dữ liệu, hỏng thiết bị hoặc mất hồ sơ tham dự.</p>
-  </section>
-
-  <!-- § 11 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 11</span>
-      <h2 class="section-title">Chấm dứt Tài khoản</h2>
-    </div>
-    <p>Bạn có thể xóa tài khoản bất kỳ lúc nào từ trong Ứng dụng. Chúng tôi có quyền đình chỉ hoặc chấm dứt vĩnh viễn bất kỳ tài khoản nào vi phạm Điều khoản này, thực hiện gian lận hoặc gây rủi ro bảo mật.</p>
-  </section>
-
-  <!-- § 12 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 12</span>
-      <h2 class="section-title">Thay đổi Điều khoản</h2>
-    </div>
-    <p>Chúng tôi có thể cập nhật Điều khoản theo thời gian. Khi đó, chúng tôi sẽ cập nhật ngày "Cập nhật lần cuối". Việc tiếp tục sử dụng Ứng dụng cấu thành sự chấp nhận Điều khoản mới.</p>
-  </section>
-
-  <!-- § 13 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 13</span>
-      <h2 class="section-title">Luật Điều chỉnh</h2>
-    </div>
-    <p>Các Điều khoản này được điều chỉnh bởi pháp luật Việt Nam. Tranh chấp sẽ được giải quyết tại tòa án Thành phố Hồ Chí Minh, Việt Nam.</p>
-  </section>
-
-  <!-- § 14 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 14</span>
-      <h2 class="section-title">Liên hệ</h2>
-    </div>
-    <p>Câu hỏi về Điều khoản? Gửi email đến <a href="mailto:support@thachnguyenhub.com">support@thachnguyenhub.com</a> — chúng tôi cố gắng phản hồi trong vòng 14 ngày.</p>
-  </section>
-
-  <hr class="doc-divider">
-  <footer class="doc-footer">
-    <a href="../index.html">← Legal Home</a>
-    <a href="privacy.html">Chính sách Bảo mật →</a>
-    <span style="margin-left:auto">© 2026 Bước Theo Chân Chúa</span>
-  </footer>
-
 </main>
 
+<footer class="site-footer">
+  <div>© 2026 Giờ Lễ & Lịch Công Giáo</div>
+  <div class="links">
+    <a href="../index.html">Trang pháp lý</a>
+    <a href="privacy.html">Chính sách Bảo mật</a>
+    <a href="mailto:support@thachnguyenhub.com">Liên hệ</a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+    var sections = links.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); });
+    if (!('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var idx = sections.indexOf(entry.target);
+        if (idx === -1) return;
+        links.forEach(function (a) { a.classList.remove('active'); });
+        links[idx].classList.add('active');
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    sections.forEach(function (s) { if (s) io.observe(s); });
+  })();
+</script>
+
+</body>
+</html>

@@ -1,340 +1,381 @@
-<title>Chính sách Bảo mật – Bước Theo Chân Chúa</title>
-<meta name="description" content="Bước Theo Chân Chúa Privacy Policy — what data we collect, why, and how you control it.">
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chính sách Bảo mật – Giờ Lễ & Lịch Công Giáo</title>
+<meta name="description" content="Chính sách Bảo mật Bước Theo Chân Chúa — dữ liệu nào chúng tôi thu thập, vì sao, và cách bạn kiểm soát chúng.">
+<link rel="canonical" href="https://docs.thachnguyenhub.com/vn/privacy.html">
+<link rel="alternate" hreflang="en" href="https://docs.thachnguyenhub.com/en/privacy.html">
+<link rel="alternate" hreflang="vi" href="https://docs.thachnguyenhub.com/vn/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.thachnguyenhub.com/vn/privacy.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Giờ Lễ & Lịch Công Giáo">
+<meta property="og:title" content="Chính sách Bảo mật – Giờ Lễ & Lịch Công Giáo">
+<meta property="og:description" content="Chính sách Bảo mật Bước Theo Chân Chúa — dữ liệu nào chúng tôi thu thập, vì sao, và cách bạn kiểm soát chúng.">
+<meta property="og:url" content="https://docs.thachnguyenhub.com/vn/privacy.html">
+<meta property="og:image" content="https://docs.thachnguyenhub.com/assets/og/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Chính sách Bảo mật – Giờ Lễ & Lịch Công Giáo">
+<meta name="twitter:description" content="Chính sách Bảo mật Bước Theo Chân Chúa — dữ liệu nào chúng tôi thu thập, vì sao, và cách bạn kiểm soát chúng.">
+<meta name="twitter:image" content="https://docs.thachnguyenhub.com/assets/og/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg:         #ffffff;
-    --surface:    #f4f9f6;
-    --border:     #d5e8de;
-    --muted:      #6a8a7a;
-    --body:       #0e1a14;
-    --dim:        #2e4a3c;
-    --accent:     #2e7a5c;
-    --accent-dim: rgba(46,122,92,.10);
-    --accent-ring: rgba(46,122,92,.22);
-    --gold:     #a07828;
+    --bg:          #F7F4EA;
+    --surface:     #FFFFFF;
+    --surface-soft:#E2EEE4;
+    --border:      #EEF1EA;
+    --text:        #1F2A22;
+    --text-dim:    #4A5A4F;
+    --text-mute:   #3A4A40;
+    --muted:       #8A978E;
+    --green-deep:  #14492F;
+    --green:       #1E6B47;
+    --green-mid:   #2C7E53;
+    --green-light: #3E9A63;
+    --green-light2:#378F5C;
+    --cream-strong:#F6E7B8;
+    --cream:       #F5F0E3;
+    --on-dark-dim: #CFE3D5;
+    --callout-bg:  #FBF1D9;
+    --callout-text:#6B4E16;
+    --danger-bg:   #FBE3E1;
+    --danger:      #B23A3A;
+    --shadow: 0 1px 2px rgba(20,73,47,.06), 0 6px 18px rgba(20,73,47,.05);
   }
 
   html { font-size: 16px; }
-
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-    background: var(--bg);
-    color: var(--body);
-    line-height: 1.75;
+    font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.6;
   }
+  a { color: inherit; text-decoration: none; }
+  strong { font-weight: 700; color: var(--green-deep); }
 
-  /* ── HEADER ── */
-  .site-header {
-    position: sticky; top: 0; z-index: 20;
-    background: var(--bg);
-    border-bottom: 1px solid var(--border);
-    display: flex; align-items: center; gap: 1rem;
-    padding: .75rem 1.5rem;
-  }
-  .site-header a { color: var(--muted); text-decoration: none; font-size: .8rem; letter-spacing: .04em; }
-  .site-header a:hover { color: var(--accent); }
-  .crumb-sep { color: var(--border); margin: 0 .25rem; }
-  .lang-switch { margin-left: auto; display: flex; align-items: center; font-size: .75rem; letter-spacing: .05em; }
-  .lang-current { color: var(--body); font-weight: 600; }
-  .lang-sep { color: var(--border); }
-
+  /* ── HERO ── */
+  .hero { position: relative; overflow: hidden; background: var(--green); color: var(--cream); padding: 24px 24px 72px; }
+  .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .hero-top { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 12px; max-width: 1200px; margin: 0 auto 48px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.05rem; color: var(--cream); flex-shrink: 0; }
+  .brand svg { width: 32px; height: 32px; flex-shrink: 0; }
+  .lang-pill { height: 34px; padding: 3px; border-radius: 17px; background: var(--green-mid); display: flex; font-size: .78rem; font-weight: 600; flex-shrink: 0; }
+  .lang-pill a, .lang-pill span { padding: 0 13px; border-radius: 14px; display: flex; align-items: center; }
+  .lang-pill .active { background: var(--cream-strong); color: var(--green-deep); }
+  .lang-pill a { color: var(--on-dark-dim); }
+  .hero-content { position: relative; z-index: 1; max-width: 760px; margin: 0 auto; }
+  .crumb { font-size: .85rem; color: var(--on-dark-dim); margin-bottom: 14px; }
+  .crumb a:hover { text-decoration: underline; }
+  .hero-content h1 { font-size: clamp(1.7rem, 4vw, 2.3rem); font-weight: 800; line-height: 1.2; margin-bottom: 10px; }
+  .hero-meta { font-size: .85rem; color: var(--on-dark-dim); font-weight: 500; }
 
   /* ── LAYOUT ── */
-  .doc { width: 80%; margin: 0 auto; padding: 3.5rem 4rem 5rem; }
+  .layout { max-width: 1200px; margin: 0 auto; padding: 0 24px 72px; display: flex; gap: 48px; align-items: flex-start; }
+  .content { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 20px; }
 
-  /* ── MASTHEAD ── */
-  .doc-eyebrow {
-    font-size: .7rem; letter-spacing: .14em; text-transform: uppercase;
-    color: var(--accent); margin-bottom: .75rem;
-    text-align: center;
+  .toc { width: 250px; flex-shrink: 0; position: sticky; top: 24px; display: flex; flex-direction: column; gap: 2px; padding: 14px; border-radius: 18px; background: var(--surface); box-shadow: var(--shadow); }
+  .toc-label { padding: 6px 12px 10px; font-size: .78rem; font-weight: 700; color: var(--green-light); letter-spacing: .05em; }
+  .toc a { padding: 8px 12px; border-radius: 10px; display: flex; gap: 10px; font-size: .85rem; line-height: 1.3; color: var(--text-mute); font-weight: 400; }
+  .toc a:hover { background: rgba(226,238,228,.6); }
+  .toc a.active { background: var(--surface-soft); color: var(--green-deep); font-weight: 600; }
+  .toc a span.n { width: 22px; flex-shrink: 0; color: var(--muted); }
+
+  .intro { font-size: 1rem; line-height: 1.7; color: var(--text-dim); max-width: 70ch; }
+
+  /* ── HIGHLIGHT CARDS ── */
+  .highlights { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .hl-card { padding: 20px; border-radius: 18px; background: var(--green); display: flex; flex-direction: column; gap: 10px; }
+  .hl-icon { width: 40px; height: 40px; border-radius: 20px; background: var(--cream-strong); display: flex; align-items: center; justify-content: center; }
+  .hl-card h3 { font-size: 1rem; font-weight: 700; color: var(--cream); }
+  .hl-card p { font-size: .82rem; line-height: 1.4; color: var(--on-dark-dim); }
+
+  /* ── SECTION CARDS ── */
+  .sec { padding: 32px 36px; border-radius: 22px; background: var(--surface); box-shadow: var(--shadow); scroll-margin-top: 24px; }
+  .sec-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+  .sec-badge { width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0; background: var(--surface-soft); color: var(--green-deep); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 700; }
+  .sec h2 { font-size: 1.4rem; font-weight: 700; color: var(--green-deep); }
+  .sec > p { font-size: 1rem; line-height: 1.7; color: var(--text-dim); margin-bottom: 14px; }
+  .sec > p:last-child { margin-bottom: 0; }
+
+  /* data groups (§2) */
+  .groups { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .group { padding: 18px; border-radius: 16px; background: var(--bg); display: flex; flex-direction: column; gap: 10px; }
+  .group h3 { font-size: .95rem; font-weight: 700; color: var(--green-deep); }
+  .group ul, .flatlist { display: flex; flex-direction: column; gap: 8px; }
+  .group li, .flatlist li { list-style: none; display: flex; gap: 10px; font-size: .88rem; line-height: 1.45; color: var(--text-mute); }
+  .flatlist li { font-size: .97rem; line-height: 1.6; gap: 12px; }
+  .dot { width: 6px; height: 6px; margin-top: 8px; flex-shrink: 0; border-radius: 3px; background: var(--green-light); }
+  .flatlist .dot { width: 7px; height: 7px; margin-top: 10px; border-radius: 4px; }
+
+  /* usage table (§3 fix) */
+  .usage { display: flex; flex-direction: column; gap: 8px; }
+  .usage-head, .usage-row { display: grid; grid-template-columns: 1.3fr 1fr .8fr; gap: 16px; padding: 10px 16px; }
+  .usage-head { font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); font-weight: 700; }
+  .usage-row { border-radius: 14px; background: var(--bg); align-items: center; }
+  .usage-row .purpose { font-weight: 700; color: var(--green-deep); font-size: .92rem; }
+  .usage-row .val { font-size: .86rem; color: var(--text-mute); }
+
+  .callout { padding: 14px 16px; border-radius: 14px; background: var(--callout-bg); color: var(--callout-text); font-size: .92rem; line-height: 1.5; }
+
+  /* ── CTA / FOOTER (shared) ── */
+  .cta { padding: 28px 36px; border-radius: 22px; background: var(--green-deep); display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+  .cta h3 { font-size: 1.3rem; font-weight: 700; color: var(--cream); margin-bottom: 4px; }
+  .cta p { font-size: .9rem; color: var(--on-dark-dim); }
+  .cta a { height: 50px; padding: 0 22px; border-radius: 25px; background: var(--cream-strong); display: flex; align-items: center; gap: 10px; font-size: .95rem; font-weight: 700; color: var(--green-deep); white-space: nowrap; flex-shrink: 0; }
+
+  .site-footer { padding: 36px 24px; background: var(--green-deep); color: var(--on-dark-dim); font-size: .88rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+  .site-footer .links { display: flex; gap: 24px; flex-wrap: wrap; }
+  .site-footer a:hover { color: var(--cream); }
+
+  @media (max-width: 880px) {
+    .layout { flex-direction: column; padding: 0 16px 56px; gap: 28px; }
+    .toc { width: 100%; position: static; }
+    .toc a.active { order: -1; }
+    .highlights, .groups { grid-template-columns: 1fr; }
+    .sec { padding: 24px 20px; }
+    .hero { padding: 20px 16px 56px; }
+    .hero-top { margin-bottom: 36px; }
+    .cta { padding: 24px; }
+    .site-footer { flex-direction: column; align-items: flex-start; }
+    .usage-head { display: none; }
+    .usage-row { grid-template-columns: 1fr; gap: 4px; }
   }
-  .doc-title {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
-    font-weight: normal; line-height: 1.2;
-    text-wrap: balance;
-    color: var(--body); margin-bottom: .5rem;
-    text-align: center;
-  }
-  .doc-meta {
-    font-size: .78rem; color: var(--muted);
-    border-top: 1px solid var(--border); padding-top: .75rem;
-    margin-top: .75rem; margin-bottom: 2.5rem;
-    text-align: center;
-  }
 
-  /* ── PREAMBLE ── */
-  .preamble {
-    background: var(--accent-dim);
-    border: 1px solid var(--accent-ring);
-    border-left: 3px solid var(--accent);
-    border-radius: 0 8px 8px 0;
-    padding: 1rem 1.25rem;
-    margin-bottom: 2.5rem;
-    font-size: .9rem; color: var(--dim);
-  }
-
-  /* ── SECTIONS ── */
-  .doc-section { margin-top: 2.75rem; }
-
-  .section-label {
-    display: flex; align-items: baseline; gap: .6rem;
-    margin-bottom: .6rem;
-  }
-  .section-num {
-    font-family: Georgia, serif;
-    font-size: .75rem; color: var(--accent);
-    letter-spacing: .06em; flex-shrink: 0;
-  }
-  .section-title {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 1.05rem; font-weight: normal;
-    color: var(--body); letter-spacing: .01em;
-  }
-
-  p { color: var(--dim); margin-bottom: .75rem; font-size: .93rem; }
-  p:last-child { margin-bottom: 0; }
-
-  ul, ol { padding-left: 1.25rem; margin-bottom: .75rem; color: var(--dim); font-size: .93rem; }
-  li { margin-bottom: .35rem; }
-  li::marker { color: var(--accent); }
-  strong { color: var(--body); font-weight: 600; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-
-  /* ── SUB-HEADING ── */
-  .sub-head {
-    font-size: .8rem; letter-spacing: .08em; text-transform: uppercase;
-    color: var(--muted); margin: 1.25rem 0 .4rem;
-  }
-
-  /* ── DATA TABLE ── */
-  .tbl-wrap { overflow-x: auto; margin: 1rem 0; border-radius: 8px; border: 1px solid var(--border); }
-  table { width: 100%; border-collapse: collapse; font-size: .84rem; font-variant-numeric: tabular-nums; }
-  thead tr { background: var(--surface); }
-  th {
-    padding: .65rem .9rem; text-align: left;
-    font-weight: 600; color: var(--body);
-    font-size: .78rem; letter-spacing: .04em;
-    border-bottom: 1px solid var(--border);
-  }
-  td {
-    padding: .6rem .9rem; color: var(--dim);
-    border-bottom: 1px solid var(--border);
-    vertical-align: top;
-  }
-  tbody tr:last-child td { border-bottom: none; }
-  tbody tr:nth-child(even) td { background: rgba(78,168,130,.04); }
-
-  /* ── DIVIDER / FOOTER ── */
-  .doc-divider { border: none; border-top: 1px solid var(--border); margin: 3rem 0 0; }
-  .doc-footer {
-    margin-top: 1.5rem;
-    display: flex; gap: 1.5rem; flex-wrap: wrap;
-    font-size: .78rem; color: var(--muted);
-  }
-  .doc-footer a { color: var(--muted); text-decoration: none; }
-  .doc-footer a:hover { color: var(--accent); }
-
-  /* ── LANG ── */
-
-  @media (max-width: 640px) { .doc { width: 92%; } }
-
-  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  :focus-visible { outline: 2px solid var(--green-light); outline-offset: 2px; }
 </style>
-
-<!-- HEADER -->
-<header class="site-header">
-  <a href="../index.html">Bước Theo Chân Chúa</a>
-  <span class="crumb-sep">›</span>
-  <span style="color:var(--body);font-size:.8rem">Chính sách Bảo mật</span>
-  <div class="lang-switch">
-    <span class="lang-current">🇻🇳 VI</span>
-    <span class="lang-sep">&nbsp;|&nbsp;</span>
-    <a href="../en/privacy.html">EN 🇬🇧</a>
+</head>
+<body>
+<header class="hero">
+  <svg class="hero-bg" viewBox="0 0 1440 360" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <g fill="#2C7E53"><rect x="980" y="170" width="240" height="36" rx="18"></rect><circle cx="1040" cy="166" r="30"></circle><circle cx="1090" cy="152" r="38"></circle><rect x="1240" y="120" width="220" height="30" rx="15"></rect><circle cx="1310" cy="116" r="26"></circle></g>
+    <circle cx="1180" cy="220" r="110" fill="#F6E7B8"></circle>
+    <g fill="#1E6B47"><rect x="1172" y="150" width="16" height="140" rx="2"></rect><rect x="1140" y="186" width="80" height="16" rx="2"></rect></g>
+    <path d="M0,300 C360,270 1080,262 1440,290 L1440,360 L0,360 Z" fill="#3E9A63"></path>
+    <path d="M0,340 C420,322 980,338 1440,316 L1440,360 L0,360 Z" fill="#378F5C"></path>
+  </svg>
+  <div class="hero-top">
+    <a class="brand" href="../index.html">
+      <svg viewBox="0 0 512 512" aria-hidden="true">
+        <defs><clipPath id="pLogo"><rect width="512" height="512" rx="112"></rect></clipPath></defs>
+        <g clip-path="url(#pLogo)">
+          <rect width="512" height="512" fill="#14492F"></rect>
+          <circle cx="256" cy="262" r="96" fill="#F6E7B8"></circle>
+          <path d="M0,318 C140,268 372,268 512,318 L512,512 L0,512 Z" fill="#3E9A63"></path>
+          <path d="M150,512 C200,440 300,420 268,360 C254,334 250,296 250,284 L262,284 C266,300 286,334 300,358 C344,424 290,456 362,512 Z" fill="#F5F0E3"></path>
+          <g fill="#14492F"><rect x="246" y="186" width="20" height="100" rx="2"></rect><rect x="222" y="214" width="68" height="20" rx="2"></rect></g>
+        </g>
+      </svg>
+      Giờ Lễ & Lịch Công Giáo
+    </a>
+    <div class="lang-pill">
+      <span class="active">VI</span>
+      <a href="../en/privacy.html">EN</a>
+    </div>
+  </div>
+  <div class="hero-content">
+    <p class="crumb"><a href="../index.html">Pháp lý</a> › Chính sách Bảo mật</p>
+    <h1>Chính sách Bảo mật</h1>
+    <p class="hero-meta">Có hiệu lực 29/06/2026 &nbsp;·&nbsp; Cập nhật lần cuối 29/06/2026</p>
   </div>
 </header>
 
-<main class="doc">
+<main class="layout">
+  <nav class="toc" aria-label="Mục lục">
+    <div class="toc-label">MỤC LỤC</div>
+    <a href="#muc-1" class="active"><span class="n">§1</span>Chúng tôi là ai</a>
+    <a href="#muc-2"><span class="n">§2</span>Thông tin chúng tôi thu thập</a>
+    <a href="#muc-3"><span class="n">§3</span>Cách chúng tôi sử dụng thông tin</a>
+    <a href="#muc-4"><span class="n">§4</span>Chúng tôi chia sẻ dữ liệu với ai</a>
+    <a href="#muc-5"><span class="n">§5</span>Thời gian lưu trữ dữ liệu</a>
+    <a href="#muc-6"><span class="n">§6</span>Bảo mật</a>
+    <a href="#muc-7"><span class="n">§7</span>Quyền riêng tư của trẻ em</a>
+    <a href="#muc-8"><span class="n">§8</span>Quyền của bạn</a>
+    <a href="#muc-9"><span class="n">§9</span>Thay đổi chính sách</a>
+    <a href="#muc-10"><span class="n">§10</span>Liên hệ</a>
+  </nav>
 
-  <p class="doc-eyebrow">Bảo mật · Bước Theo Chân Chúa</p>
+  <div class="content">
+    <p class="intro">Quyền riêng tư của bạn quan trọng với chúng tôi. Chính sách này giải thích rõ dữ liệu nào Bước Theo Chân Chúa thu thập, lý do thu thập, và cách bạn kiểm soát chúng.</p>
 
-  <h1 class="doc-title">Chính sách Bảo mật</h1>
+    <div class="highlights">
+      <div class="hl-card">
+        <div class="hl-icon"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z M9 12l2 2 4-4" fill="none" stroke="#1E6B47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+        <h3>Không bán dữ liệu</h3>
+        <p>Dữ liệu cá nhân của bạn không bao giờ được bán cho bên thứ ba.</p>
+      </div>
+      <div class="hl-card">
+        <div class="hl-icon"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z M12 7.5a2.5 2.5 0 1 0 0.01 0" fill="none" stroke="#1E6B47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+        <h3>Vị trí chỉ khi điểm danh</h3>
+        <p>GPS chỉ dùng lúc bạn check-in, không bao giờ chạy nền.</p>
+      </div>
+      <div class="hl-card">
+        <div class="hl-icon"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16 M9 7V4h6v3 M6 7l1 13h10l1-13 M10 11v6 M14 11v6" fill="none" stroke="#1E6B47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+        <h3>Xóa trong 30 ngày</h3>
+        <p>Xóa tài khoản trong Cài đặt, dữ liệu cá nhân bị xóa vĩnh viễn.</p>
+      </div>
+    </div>
 
-  <p class="doc-meta">Có hiệu lực 29/06/2026 &nbsp;·&nbsp; Cập nhật lần cuối 29/06/2026</p>
+    <section class="sec" id="muc-1">
+      <div class="sec-head"><span class="sec-badge">1</span><h2>Chúng tôi là ai</h2></div>
+      <p>Bước Theo Chân Chúa là ứng dụng di động cho việc theo dõi tham dự nhà thờ và gamification cộng đồng. Để liên hệ về quyền riêng tư: <a href="mailto:support@thachnguyenhub.com" style="color:var(--green);text-decoration:underline">support@thachnguyenhub.com</a>.</p>
+    </section>
 
-  <div class="preamble">
-    <p>Quyền riêng tư của bạn quan trọng với chúng tôi. Chính sách này giải thích rõ dữ liệu nào Bước Theo Chân Chúa thu thập, lý do thu thập, và cách bạn kiểm soát chúng.</p>
+    <section class="sec" id="muc-2">
+      <div class="sec-head"><span class="sec-badge">2</span><h2>Thông tin chúng tôi thu thập</h2></div>
+      <p>Chúng tôi chỉ thu thập những gì cần thiết để vận hành Ứng dụng.</p>
+      <div class="groups">
+        <div class="group">
+          <h3>Thông tin tài khoản</h3>
+          <ul>
+            <li><span class="dot"></span>Họ tên và địa chỉ email (cung cấp khi đăng ký)</li>
+            <li><span class="dot"></span>Mật khẩu — lưu dưới dạng mã băm một chiều, không thể đọc lại</li>
+            <li><span class="dot"></span>Ảnh đại diện (tùy chọn, do bạn tải lên)</li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Dữ liệu vị trí</h3>
+          <ul>
+            <li><span class="dot"></span>Tọa độ GPS chỉ được truy cập tại thời điểm bạn thực hiện điểm danh.</li>
+            <li><span class="dot"></span>Chỉ lưu rằng điểm danh đã xảy ra tại nhà thờ nào, lúc nào — không lưu lịch sử vị trí liên tục.</li>
+            <li><span class="dot"></span>Vị trí không bao giờ được truy cập khi chạy nền.</li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Dữ liệu hoạt động</h3>
+          <ul>
+            <li><span class="dot"></span>Lịch sử tham dự (nhà thờ, ngày, giờ mỗi lần điểm danh)</li>
+            <li><span class="dot"></span>Điểm tích lũy, nhiệm vụ hoàn thành, thành tích mở khóa, chuỗi tham dự</li>
+            <li><span class="dot"></span>Thứ hạng bảng xếp hạng (được tính từ dữ liệu trên)</li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Dữ liệu kỹ thuật</h3>
+          <ul>
+            <li><span class="dot"></span>Loại thiết bị và phiên bản hệ điều hành (chỉ để chẩn đoán sự cố)</li>
+            <li><span class="dot"></span>Phiên bản Ứng dụng và thời gian phiên đăng nhập</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="muc-3">
+      <div class="sec-head"><span class="sec-badge">3</span><h2>Cách chúng tôi sử dụng thông tin</h2></div>
+      <div class="usage">
+        <div class="usage-head"><div>Mục đích</div><div>Dữ liệu sử dụng</div><div>Căn cứ pháp lý</div></div>
+        <div class="usage-row"><div class="purpose">Xác minh điểm danh nhà thờ</div><div class="val">GPS, ID tài khoản</div><div class="val">Hợp đồng</div></div>
+        <div class="usage-row"><div class="purpose">Hiển thị bảng xếp hạng</div><div class="val">Tên, điểm, thứ hạng</div><div class="val">Lợi ích hợp pháp</div></div>
+        <div class="usage-row"><div class="purpose">Trao nhiệm vụ và thành tích</div><div class="val">Lịch sử tham dự, điểm</div><div class="val">Hợp đồng</div></div>
+        <div class="usage-row"><div class="purpose">Thông báo dịch vụ</div><div class="val">Email, device token</div><div class="val">Sự đồng ý (opt-in)</div></div>
+        <div class="usage-row"><div class="purpose">Cải thiện hiệu suất Ứng dụng</div><div class="val">Dữ liệu kỹ thuật, ẩn danh</div><div class="val">Lợi ích hợp pháp</div></div>
+      </div>
+    </section>
+
+    <section class="sec" id="muc-4">
+      <div class="sec-head"><span class="sec-badge">4</span><h2>Chúng tôi chia sẻ dữ liệu với ai</h2></div>
+      <p>Chúng tôi không bán dữ liệu cá nhân của bạn. Chúng tôi có thể chia sẻ dữ liệu hạn chế với:</p>
+      <ul class="flatlist">
+        <li><span class="dot"></span><span><strong>Quản trị viên nhà thờ —</strong> Tên và hồ sơ tham dự của bạn hiển thị với quản trị viên của nhà thờ bạn đã điểm danh.</span></li>
+        <li><span class="dot"></span><span><strong>Người dùng khác (bảng xếp hạng) —</strong> Tên hiển thị và thứ hạng điểm của bạn hiển thị trên bảng xếp hạng công khai.</span></li>
+        <li><span class="dot"></span><span><strong>Hạ tầng đám mây —</strong> Máy chủ được lưu trữ trên nhà cung cấp đám mây; dữ liệu được xử lý trong môi trường bảo mật của họ và không bao giờ bị bán lại.</span></li>
+        <li><span class="dot"></span><span><strong>Nghĩa vụ pháp lý —</strong> Chúng tôi có thể tiết lộ dữ liệu khi có yêu cầu theo pháp luật hoặc để bảo vệ an toàn người dùng.</span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="muc-5">
+      <div class="sec-head"><span class="sec-badge">5</span><h2>Thời gian lưu trữ dữ liệu</h2></div>
+      <ul class="flatlist">
+        <li><span class="dot"></span><span>Dữ liệu tài khoản và hoạt động được lưu trong khi tài khoản còn hoạt động.</span></li>
+        <li><span class="dot"></span><span>Sau khi xóa tài khoản, dữ liệu cá nhân sẽ bị xóa vĩnh viễn trong vòng <strong>30 ngày</strong>.</span></li>
+        <li><span class="dot"></span><span>Thống kê tổng hợp ẩn danh (ví dụ: tổng số lần điểm danh mỗi nhà thờ) có thể được lưu vô thời hạn cho mục đích vận hành.</span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="muc-6">
+      <div class="sec-head"><span class="sec-badge">6</span><h2>Bảo mật</h2></div>
+      <ul class="flatlist">
+        <li><span class="dot"></span><span>Tất cả lưu lượng giữa Ứng dụng và máy chủ được mã hóa bằng <strong>HTTPS/TLS</strong>.</span></li>
+        <li><span class="dot"></span><span>Mật khẩu được lưu dưới dạng <strong>bcrypt hash</strong> — không thể đọc bởi nhóm của chúng tôi.</span></li>
+        <li><span class="dot"></span><span>Xác thực sử dụng <strong>JWT token</strong> có thời hạn ngắn.</span></li>
+        <li><span class="dot"></span><span>Truy cập cơ sở dữ liệu chỉ giới hạn cho nhân viên được ủy quyền.</span></li>
+      </ul>
+      <div class="callout">Không có hệ thống nào an toàn 100%. Nếu nghi ngờ có truy cập trái phép, hãy liên hệ với chúng tôi ngay.</div>
+    </section>
+
+    <section class="sec" id="muc-7">
+      <div class="sec-head"><span class="sec-badge">7</span><h2>Quyền riêng tư của trẻ em</h2></div>
+      <p>Bước Theo Chân Chúa không hướng đến trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin cá nhân từ trẻ em dưới 13 tuổi. Nếu phát hiện điều này, chúng tôi sẽ xóa ngay.</p>
+    </section>
+
+    <section class="sec" id="muc-8">
+      <div class="sec-head"><span class="sec-badge">8</span><h2>Quyền của bạn</h2></div>
+      <ul class="flatlist">
+        <li><span class="dot"></span><span><strong>Truy cập —</strong> Yêu cầu bản sao dữ liệu chúng tôi lưu trữ về bạn.</span></li>
+        <li><span class="dot"></span><span><strong>Chỉnh sửa —</strong> Cập nhật thông tin không chính xác trong hồ sơ của bạn.</span></li>
+        <li><span class="dot"></span><span><strong>Xóa —</strong> Xóa tài khoản qua Cài đặt → Xóa tài khoản; dữ liệu cá nhân sẽ bị xóa trong 30 ngày.</span></li>
+        <li><span class="dot"></span><span><strong>Phản đối —</strong> Từ chối bảng xếp hạng công khai; tên bạn sẽ bị xóa khỏi bảng xếp hạng cộng đồng.</span></li>
+        <li><span class="dot"></span><span><strong>Portability —</strong> Yêu cầu xuất dữ liệu lịch sử tham dự ở định dạng có thể đọc bằng máy.</span></li>
+      </ul>
+      <div class="callout">Để thực hiện bất kỳ quyền nào, email <a href="mailto:support@thachnguyenhub.com" style="color:inherit;text-decoration:underline">support@thachnguyenhub.com</a>. Chúng tôi phản hồi trong 30 ngày.</div>
+    </section>
+
+    <section class="sec" id="muc-9">
+      <div class="sec-head"><span class="sec-badge">9</span><h2>Thay đổi chính sách</h2></div>
+      <p>Chúng tôi có thể cập nhật Chính sách Bảo mật theo thời gian. Thay đổi quan trọng sẽ được thông báo qua Ứng dụng hoặc email. Ngày "Cập nhật lần cuối" luôn phản ánh bản sửa đổi gần nhất.</p>
+    </section>
+
+    <section class="sec" id="muc-10">
+      <div class="sec-head"><span class="sec-badge">10</span><h2>Liên hệ</h2></div>
+      <p>Để giải quyết câu hỏi về quyền riêng tư hoặc thực hiện quyền của bạn, email <a href="mailto:support@thachnguyenhub.com" style="color:var(--green);text-decoration:underline">support@thachnguyenhub.com</a>. Chúng tôi cố gắng phản hồi trong vòng 30 ngày.</p>
+    </section>
+
+    <div class="cta">
+      <div>
+        <h3>Có câu hỏi về quyền riêng tư?</h3>
+        <p>Chúng tôi phản hồi trong vòng 30 ngày.</p>
+      </div>
+      <a href="mailto:support@thachnguyenhub.com">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z M3 7l9 6 9-6" fill="none" stroke="#14492F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        support@thachnguyenhub.com
+      </a>
+    </div>
   </div>
-
-  <!-- § 1 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 1</span>
-      <h2 class="section-title">Chúng tôi là ai</h2>
-    </div>
-    <p>Bước Theo Chân Chúa là ứng dụng di động cho việc theo dõi tham dự nhà thờ và gamification cộng đồng. Để liên hệ về quyền riêng tư: <a href="mailto:support@thachnguyenhub.com">support@thachnguyenhub.com</a>.</p>
-  </section>
-
-  <!-- § 2 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 2</span>
-      <h2 class="section-title">Thông tin chúng tôi thu thập</h2>
-    </div>
-    <p>Chúng tôi chỉ thu thập những gì cần thiết để vận hành Ứng dụng.</p>
-
-    <p class="sub-head">Thông tin tài khoản</p>
-    <ul>
-      <li>Họ tên và địa chỉ email (cung cấp khi đăng ký)</li>
-      <li>Mật khẩu — lưu dưới dạng mã băm một chiều, không thể đọc lại</li>
-      <li>Ảnh đại diện (tùy chọn, do bạn tải lên)</li>
-    </ul>
-
-    <p class="sub-head">Dữ liệu vị trí</p>
-    <ul>
-      <li>Tọa độ GPS chỉ được truy cập <strong>tại thời điểm bạn thực hiện điểm danh</strong>.</li>
-      <li>Chúng tôi chỉ lưu rằng điểm danh đã xảy ra tại nhà thờ nào, lúc nào — không lưu lịch sử vị trí liên tục.</li>
-      <li>Vị trí không bao giờ được truy cập khi chạy nền.</li>
-    </ul>
-
-    <p class="sub-head">Dữ liệu hoạt động</p>
-    <ul>
-      <li>Lịch sử tham dự (nhà thờ, ngày, giờ mỗi lần điểm danh)</li>
-      <li>Điểm tích lũy, nhiệm vụ hoàn thành, thành tích mở khóa, chuỗi tham dự</li>
-      <li>Thứ hạng bảng xếp hạng (được tính từ dữ liệu trên)</li>
-    </ul>
-
-    <p class="sub-head">Dữ liệu kỹ thuật</p>
-    <ul>
-      <li>Loại thiết bị và phiên bản hệ điều hành (chỉ để chẩn đoán sự cố)</li>
-      <li>Phiên bản Ứng dụng và thời gian phiên đăng nhập</li>
-    </ul>
-  </section>
-
-  <!-- § 3 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 3</span>
-      <h2 class="section-title">Cách chúng tôi sử dụng thông tin</h2>
-    </div>
-
-    <div class="tbl-wrap">
-      <table>
-        <thead>
-          <tr>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-          </tr>
-          <tr>
-          </tr>
-          <tr>
-          </tr>
-          <tr>
-          </tr>
-          <tr>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- § 4 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 4</span>
-      <h2 class="section-title">Chúng tôi chia sẻ dữ liệu với ai</h2>
-    </div>
-    <p>Chúng tôi không bán dữ liệu cá nhân của bạn. Chúng tôi có thể chia sẻ dữ liệu hạn chế với:</p>
-    <ul>
-      <li><strong>Quản trị viên nhà thờ</strong> — Tên và hồ sơ tham dự của bạn hiển thị với quản trị viên của nhà thờ bạn đã điểm danh.</li>
-      <li><strong>Người dùng khác (bảng xếp hạng)</strong> — Tên hiển thị và thứ hạng điểm của bạn hiển thị trên bảng xếp hạng công khai.</li>
-      <li><strong>Hạ tầng đám mây</strong> — Máy chủ được lưu trữ trên nhà cung cấp đám mây; dữ liệu được xử lý trong môi trường bảo mật của họ và không bao giờ bị bán lại.</li>
-      <li><strong>Nghĩa vụ pháp lý</strong> — Chúng tôi có thể tiết lộ dữ liệu khi có yêu cầu theo pháp luật hoặc để bảo vệ an toàn người dùng.</li>
-    </ul>
-  </section>
-
-  <!-- § 5 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 5</span>
-      <h2 class="section-title">Thời gian lưu trữ Dữ liệu</h2>
-    </div>
-    <ul>
-      <li>Dữ liệu tài khoản và hoạt động được lưu trong khi tài khoản còn hoạt động.</li>
-      <li>Sau khi xóa tài khoản, dữ liệu cá nhân sẽ bị xóa vĩnh viễn trong vòng <strong>30 ngày</strong>.</li>
-      <li>Thống kê tổng hợp ẩn danh (ví dụ: tổng số lần điểm danh mỗi nhà thờ) có thể được lưu vô thời hạn cho mục đích vận hành.</li>
-    </ul>
-  </section>
-
-  <!-- § 6 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 6</span>
-      <h2 class="section-title">Bảo mật</h2>
-    </div>
-    <ul>
-      <li>Tất cả lưu lượng giữa Ứng dụng và máy chủ được mã hóa bằng <strong>HTTPS/TLS</strong>.</li>
-      <li>Mật khẩu được lưu dưới dạng <strong>bcrypt hash</strong> — không thể đọc bởi nhóm của chúng tôi.</li>
-      <li>Xác thực sử dụng <strong>JWT token</strong> có thời hạn ngắn.</li>
-      <li>Truy cập cơ sở dữ liệu chỉ giới hạn cho nhân viên được ủy quyền.</li>
-    </ul>
-    <p>Không có hệ thống nào an toàn 100%. Nếu nghi ngờ có truy cập trái phép, hãy liên hệ với chúng tôi ngay.</p>
-  </section>
-
-  <!-- § 7 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 7</span>
-      <h2 class="section-title">Quyền riêng tư của Trẻ em</h2>
-    </div>
-    <p>Bước Theo Chân Chúa không hướng đến trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin cá nhân từ trẻ em dưới 13 tuổi. Nếu phát hiện điều này, chúng tôi sẽ xóa ngay.</p>
-  </section>
-
-  <!-- § 8 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 8</span>
-      <h2 class="section-title">Quyền của bạn</h2>
-    </div>
-    <ul>
-      <li><strong>Truy cập</strong> — Yêu cầu bản sao dữ liệu chúng tôi lưu trữ về bạn.</li>
-      <li><strong>Chỉnh sửa</strong> — Cập nhật thông tin không chính xác trong hồ sơ của bạn.</li>
-      <li><strong>Xóa</strong> — Xóa tài khoản qua Cài đặt → Xóa tài khoản; dữ liệu cá nhân sẽ bị xóa trong 30 ngày.</li>
-      <li><strong>Phản đối</strong> — Từ chối bảng xếp hạng công khai; tên bạn sẽ bị xóa khỏi bảng xếp hạng cộng đồng.</li>
-      <li><strong>Portability</strong> — Yêu cầu xuất dữ liệu lịch sử tham dự ở định dạng có thể đọc bằng máy.</li>
-    </ul>
-    <p>Để thực hiện bất kỳ quyền nào, email <a href="mailto:support@thachnguyenhub.com">support@thachnguyenhub.com</a>. Chúng tôi phản hồi trong 30 ngày.</p>
-  </section>
-
-  <!-- § 9 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 9</span>
-      <h2 class="section-title">Thay đổi Chính sách</h2>
-    </div>
-    <p>Chúng tôi có thể cập nhật Chính sách Bảo mật theo thời gian. Thay đổi quan trọng sẽ được thông báo qua Ứng dụng hoặc email. Ngày "Cập nhật lần cuối" luôn phản ánh bản sửa đổi gần nhất.</p>
-  </section>
-
-  <!-- § 10 -->
-  <section class="doc-section">
-    <div class="section-label">
-      <span class="section-num">§ 10</span>
-      <h2 class="section-title">Liên hệ</h2>
-    </div>
-    <p>Để giải quyết câu hỏi về quyền riêng tư hoặc thực hiện quyền của bạn, email <a href="mailto:support@thachnguyenhub.com">support@thachnguyenhub.com</a>. Chúng tôi cố gắng phản hồi trong vòng 30 ngày.</p>
-  </section>
-
-  <hr class="doc-divider">
-  <footer class="doc-footer">
-    <a href="../index.html">← Legal Home</a>
-    <a href="terms.html">Điều khoản Sử dụng</a>
-    <span style="margin-left:auto">© 2026 Bước Theo Chân Chúa</span>
-  </footer>
-
 </main>
 
+<footer class="site-footer">
+  <div>© 2026 Giờ Lễ & Lịch Công Giáo</div>
+  <div class="links">
+    <a href="../index.html">Trang pháp lý</a>
+    <a href="terms.html">Điều khoản Sử dụng</a>
+    <a href="mailto:support@thachnguyenhub.com">Liên hệ</a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+    var sections = links.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); });
+    if (!('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var idx = sections.indexOf(entry.target);
+        if (idx === -1) return;
+        links.forEach(function (a) { a.classList.remove('active'); });
+        links[idx].classList.add('active');
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    sections.forEach(function (s) { if (s) io.observe(s); });
+  })();
+</script>
+
+</body>
+</html>

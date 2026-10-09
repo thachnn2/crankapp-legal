@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://docs.thachnguyenhub.com/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://docs.thachnguyenhub.com/vn/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.thachnguyenhub.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.thachnguyenhub.com/"/>
+  </url>
+
+  <url>
+    <loc>https://docs.thachnguyenhub.com/vn/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://docs.thachnguyenhub.com/vn/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.thachnguyenhub.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.thachnguyenhub.com/"/>
+  </url>
+
+  <url>
+    <loc>https://docs.thachnguyenhub.com/en/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://docs.thachnguyenhub.com/vn/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.thachnguyenhub.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.thachnguyenhub.com/"/>
+  </url>
+
+  <url>
+    <loc>https://docs.thachnguyenhub.com/vn/terms.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://docs.thachnguyenhub.com/vn/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.thachnguyenhub.com/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.thachnguyenhub.com/vn/terms.html"/>
+  </url>
+
+  <url>
+    <loc>https://docs.thachnguyenhub.com/en/terms.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://docs.thachnguyenhub.com/vn/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.thachnguyenhub.com/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.thachnguyenhub.com/vn/terms.html"/>
+  </url>
+
+  <url>
+    <loc>https://docs.thachnguyenhub.com/vn/privacy.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://docs.thachnguyenhub.com/vn/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.thachnguyenhub.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.thachnguyenhub.com/vn/privacy.html"/>
+  </url>
+
+  <url>
+    <loc>https://docs.thachnguyenhub.com/en/privacy.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://docs.thachnguyenhub.com/vn/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.thachnguyenhub.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.thachnguyenhub.com/vn/privacy.html"/>
+  </url>
+
+  <url>
+    <loc>https://docs.thachnguyenhub.com/vn/delete-account.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://docs.thachnguyenhub.com/vn/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.thachnguyenhub.com/en/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.thachnguyenhub.com/vn/delete-account.html"/>
+  </url>
+
+  <url>
+    <loc>https://docs.thachnguyenhub.com/en/delete-account.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://docs.thachnguyenhub.com/vn/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.thachnguyenhub.com/en/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.thachnguyenhub.com/vn/delete-account.html"/>
+  </url>
+
+</urlset>

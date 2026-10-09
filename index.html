@@ -3,35 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bước Theo Chân Chúa – Legal</title>
-  <meta name="description" content="Legal documents for Bước Theo Chân Chúa — choose your language.">
-  <style>
+  <title>Giờ Lễ & Lịch Công Giáo</title>
+  <meta name="description" content="Bước Theo Chân Chúa — choose your language.">
+  <link rel="canonical" href="https://docs.thachnguyenhub.com/">
+  <link rel="alternate" hreflang="vi" href="https://docs.thachnguyenhub.com/vn/">
+  <link rel="alternate" hreflang="en" href="https://docs.thachnguyenhub.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://docs.thachnguyenhub.com/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Giờ Lễ & Lịch Công Giáo">
+  <meta property="og:title" content="Giờ Lễ & Lịch Công Giáo">
+  <meta property="og:description" content="Bước Theo Chân Chúa — choose your language.">
+  <meta property="og:url" content="https://docs.thachnguyenhub.com/">
+  <meta property="og:image" content="https://docs.thachnguyenhub.com/assets/og/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Giờ Lễ & Lịch Công Giáo">
+  <meta name="twitter:image" content="https://docs.thachnguyenhub.com/assets/og/og-image.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
+<style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     :root {
-      --bg: #ffffff; --surface: #f7f4ef; --border: #e5dfd5;
-      --muted: #9a8a72; --body: #1a1208;
-      --gold: #a07828; --gold-dim: rgba(160,120,40,.10);
+      --bg: #F7F4EA; --surface: #ffffff; --border: #EEF1EA;
+      --muted: #8A978E; --body: #1F2A22;
+      --green-deep: #14492F; --green: #1E6B47; --green-light: #3E9A63;
+      --cream-strong: #F6E7B8;
     }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       background: var(--bg); color: var(--body);
       min-height: 100vh; display: flex; flex-direction: column;
       align-items: center; justify-content: center; padding: 2rem;
-      gap: 0;
     }
-    .logo {
-      width: 68px; height: 68px; background: var(--gold-dim);
-      border: 1px solid rgba(196,147,56,.3); border-radius: 16px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 2.2rem; margin-bottom: 1.25rem;
-    }
+    .logo { width: 68px; height: 68px; margin-bottom: 1.25rem; }
     h1 {
-      font-family: Georgia, 'Times New Roman', serif;
-      font-size: clamp(1.3rem, 4vw, 1.8rem);
-      font-weight: normal; text-align: center;
-      text-wrap: balance; margin-bottom: .35rem;
+      font-size: clamp(1.4rem, 4vw, 1.9rem); font-weight: 800;
+      text-align: center; text-wrap: balance; margin-bottom: .35rem;
+      color: var(--green-deep);
     }
-    .tagline { font-size: .82rem; color: var(--muted); margin-bottom: .2rem; text-align: center; }
+    .tagline { font-size: .85rem; color: var(--muted); margin-bottom: .2rem; text-align: center; }
     .divider { width: 36px; height: 1px; background: var(--border); margin: 1.75rem auto 2rem; }
     .prompt {
       font-size: .72rem; letter-spacing: .1em; text-transform: uppercase;
@@ -41,27 +55,33 @@
     .lang-card {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 16px;
       padding: 1.5rem 2rem;
       text-decoration: none; color: inherit;
       text-align: center; min-width: 160px;
+      box-shadow: 0 1px 2px rgba(20,73,47,.06), 0 8px 24px rgba(20,73,47,.06);
       transition: border-color .2s, transform .2s;
     }
-    .lang-card:hover { border-color: var(--gold); transform: translateY(-3px); }
+    .lang-card:hover { border-color: var(--green-light); transform: translateY(-3px); }
     .lang-flag { font-size: 2rem; margin-bottom: .6rem; }
-    .lang-name {
-      font-family: Georgia, serif; font-size: 1rem;
-      font-weight: normal; color: var(--body);
-      margin-bottom: .25rem;
-    }
-    .lang-sub { font-size: .75rem; color: var(--muted); }
-    footer { margin-top: 3.5rem; font-size: .72rem; color: var(--border); text-align: center; }
-    :focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+    .lang-name { font-size: 1.05rem; font-weight: 700; color: var(--green-deep); margin-bottom: .25rem; }
+    .lang-sub { font-size: .78rem; color: var(--muted); }
+    footer { margin-top: 3.5rem; font-size: .72rem; color: var(--muted); text-align: center; }
+    :focus-visible { outline: 2px solid var(--green-light); outline-offset: 2px; }
   </style>
 </head>
 <body>
-  <div class="logo">✝️</div>
-  <h1>Bước Theo Chân Chúa</h1>
+  <svg class="logo" viewBox="0 0 512 512" aria-hidden="true">
+    <defs><clipPath id="rLogo"><rect width="512" height="512" rx="112"></rect></clipPath></defs>
+    <g clip-path="url(#rLogo)">
+      <rect width="512" height="512" fill="#14492F"></rect>
+      <circle cx="256" cy="262" r="96" fill="#F6E7B8"></circle>
+      <path d="M0,318 C140,268 372,268 512,318 L512,512 L0,512 Z" fill="#3E9A63"></path>
+      <path d="M150,512 C200,440 300,420 268,360 C254,334 250,296 250,284 L262,284 C266,300 286,334 300,358 C344,424 290,456 362,512 Z" fill="#F5F0E3"></path>
+      <g fill="#14492F"><rect x="246" y="186" width="20" height="100" rx="2"></rect><rect x="222" y="214" width="68" height="20" rx="2"></rect></g>
+    </g>
+  </svg>
+  <h1>Giờ Lễ & Lịch Công Giáo</h1>
   <p class="tagline">Điểm danh nhà thờ &amp; Cộng đồng đức tin</p>
   <div class="divider"></div>
   <p class="prompt">Chọn ngôn ngữ / Select language</p>
@@ -69,14 +89,14 @@
     <a class="lang-card" href="vn/index.html">
       <div class="lang-flag">🇻🇳</div>
       <div class="lang-name">Tiếng Việt</div>
-      <div class="lang-sub">Điều khoản &amp; Bảo mật</div>
+      <div class="lang-sub">Trang chủ &amp; Pháp lý</div>
     </a>
     <a class="lang-card" href="en/index.html">
       <div class="lang-flag">🇬🇧</div>
       <div class="lang-name">English</div>
-      <div class="lang-sub">Terms &amp; Privacy</div>
+      <div class="lang-sub">Home &amp; Legal</div>
     </a>
   </div>
-  <footer>© 2026 Bước Theo Chân Chúa</footer>
+  <footer>© 2026 Giờ Lễ & Lịch Công Giáo</footer>
 </body>
 </html>
