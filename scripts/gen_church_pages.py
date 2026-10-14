@@ -4,6 +4,7 @@
 Outputs:
   nha-tho/<slug>.html   one page per church (title: "Giờ Lễ {name} - {address}")
   assets/church.css     CSS shared by the generated pages (copied from index.html)
+  assets/church.js      highlights today's row and next mass in the schedule
   sitemap.xml           static entries kept, church URLs regenerated
   scripts/church_pages.json  id -> {slug, hash, lastmod}; commit it so URLs never change
                         once published and lastmod only moves when a church's data does
@@ -119,9 +120,28 @@ def full_name(church):
     return name if name.lower().startswith(KIND_PREFIXES) else f"Giáo xứ {name}"
 
 
+def norm_time(t):
+    """'8h' -> '08:00', '4:30' -> '04:30', '08:00)' -> '08:00', '.' -> ''. Notes are kept as typed."""
+    t = t.strip().rstrip(":").strip()
+    if t.endswith(")") and t.count(")") > t.count("("):
+        t = t[:-1].strip()
+    if not re.search(r"\w", t):
+        return ""
+    m = re.fullmatch(r"(\d{1,2})(?:[:h](\d{2}))?h?", t)
+    if m and int(m[1]) < 24:
+        return f"{int(m[1]):02d}:{m[2] or '00'}"
+    return re.sub(r"^(\d)(?=:\d\d)", r"0\1", t)
+
+
+def time_key(t):
+    m = re.search(r"(\d{1,2})[:h](\d{2})", t)
+    return (int(m[1]), int(m[2]), t) if m else (99, 0, t)
+
+
 def times_for(church, key):
     raw = (church.get("schedule") or {}).get("weekly") or {}
-    return sorted(t for t in raw.get(key) or [] if t)
+    times = {norm_time(t) for t in raw.get(key) or [] if t}
+    return sorted((t for t in times if t), key=time_key)
 
 
 def has_schedule(church):
@@ -215,13 +235,76 @@ EXTRA_CSS = """
 .crumbs a:hover { color: var(--cream); }
 .hero-addr { display: flex; gap: 10px; align-items: flex-start; font-size: 1.05rem; line-height: 1.55; color: var(--on-dark-dim); max-width: 46ch; }
 .hero-addr svg { flex-shrink: 0; margin-top: 3px; }
+.hero-addr-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+.addr-dir { height: 34px; padding: 0 16px; border-radius: 17px; border: 1.5px solid var(--on-dark-dim); color: var(--cream); display: inline-flex; align-items: center; font-size: .85rem; font-weight: 600; white-space: nowrap; }
+.addr-dir:hover { background: var(--green-mid); opacity: 1; }
+.schedule { padding: 64px 0 32px; }
+.sched-card { max-width: 880px; border-radius: 24px; background: var(--surface); box-shadow: var(--shadow); overflow: hidden; }
+.sched-row { display: grid; grid-template-columns: 132px 1fr; gap: 16px; align-items: start; padding: 16px 24px; border-top: 1px solid var(--border); }
+.sched-row:first-child { border-top: 0; }
+.sched-row.is-sun { background: var(--cream); }
+.sched-day { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; padding-top: 6px; font-weight: 700; color: var(--green-deep); }
+.sched-times { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; min-width: 0; }
+.sched-times li { padding: 6px 14px; border-radius: 16px; background: var(--surface-soft); color: var(--green-deep); font-size: .95rem; font-weight: 600; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.sched-row.is-sun .sched-times li { background: var(--cream-strong); }
+.sched-times li.none { padding-left: 0; padding-right: 0; background: none !important; color: var(--muted); font-weight: 500; }
+.sched-row.is-today { background: var(--green); }
+.sched-row.is-today .sched-day { color: var(--cream); }
+.sched-row.is-today .sched-times li { background: var(--green-mid); color: var(--cream); }
+.sched-row.is-today .sched-times li.none { color: var(--on-dark-dim); }
+.sched-row.is-today .sched-times li.is-past { opacity: .55; }
+.sched-row.is-today .sched-times li.is-next { background: var(--cream-strong); color: var(--green-deep); box-shadow: 0 0 0 3px rgba(246,231,184,.35); }
+.today-badge { padding: 2px 10px; border-radius: 10px; background: var(--cream-strong); color: var(--green-deep); font-size: .72rem; font-weight: 700; letter-spacing: .02em; white-space: nowrap; }
+.sched-empty { padding: 24px; color: var(--text-dim); line-height: 1.6; }
+.sched-note { max-width: 70ch; margin-top: 16px; font-size: .88rem; color: var(--text-dim); }
 @media (max-width: 960px) {
   .hero .phone-wrap { display: none; }
 }
 @media (max-width: 640px) {
   .brand { font-size: .95rem; }
   .hero-qr { display: none; }
+  .schedule { padding: 48px 0 24px; }
+  .sched-row { grid-template-columns: 1fr; gap: 8px; padding: 14px 18px; }
+  .sched-day { padding-top: 0; }
 }
+"""
+
+# Pages are static, so "today" is worked out in the browser, on Vietnam time whatever the visitor's zone.
+SCHEDULE_JS = """(function () {
+  var rows = document.querySelectorAll('.sched-row[data-day]');
+  if (!rows.length) return;
+  var day, mins;
+  try {
+    var p = {};
+    new Intl.DateTimeFormat('en-US', { timeZone: 'Asia/Ho_Chi_Minh', weekday: 'short', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' })
+      .formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; });
+    day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(p.weekday);
+    mins = (+p.hour % 24) * 60 + +p.minute;
+  } catch (err) {
+    var d = new Date();
+    day = d.getDay();
+    mins = d.getHours() * 60 + d.getMinutes();
+  }
+  var row = document.querySelector('.sched-row[data-day="' + day + '"]');
+  if (!row) return;
+  row.classList.add('is-today');
+  var badge = document.createElement('span');
+  badge.className = 'today-badge';
+  badge.textContent = 'Hôm nay';
+  row.querySelector('.sched-day').appendChild(badge);
+  var next = null;
+  Array.prototype.forEach.call(row.querySelectorAll('.sched-times li:not(.none)'), function (li) {
+    var m = li.textContent.match(/(\\d{1,2})[:h](\\d{2})/);
+    if (!m) return;
+    if (+m[1] * 60 + +m[2] < mins) {
+      li.classList.add('is-past');
+    } else if (!next) {
+      next = li;
+      li.classList.add('is-next');
+      li.title = 'Thánh lễ tiếp theo';
+    }
+  });
+})();
 """
 
 PIN_ICON = ('<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z" '
@@ -318,8 +401,40 @@ def footer(parts):
 
 # ── church page ───────────────────────────────────────────────────────────────
 
+def schedule_section(church):
+    name = full_name(church)
+    if has_schedule(church):
+        rows = []
+        for key, label in DAYS:
+            times = times_for(church, key)
+            items = "".join(f"<li>{e(t)}</li>" for t in times) or '<li class="none">Chưa cập nhật</li>'
+            sun = " is-sun" if key == "0" else ""
+            rows.append(f'      <div class="sched-row{sun}" data-day="{key}"><div class="sched-day">{label}</div><ul class="sched-times">{items}</ul></div>')
+        body = "\n".join(rows)
+        note = ("Giờ lễ có thể thay đổi vào các dịp lễ trọng, theo mùa phụng vụ hoặc theo mùa hè / mùa đông. "
+                "Mở ứng dụng để xem giờ lễ mới nhất và check-in khi đi lễ.")
+    else:
+        body = (f'      <p class="sched-empty">Chưa có thông tin giờ lễ của {e(name)}. '
+                f'Bạn có thể bổ sung giờ lễ trong ứng dụng Giờ Lễ &amp; Lịch Công Giáo.</p>')
+        note = ""
+    return f"""<section class="schedule" id="gio-le">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">GIỜ LỄ HÀNG TUẦN</span>
+      <h2>Giờ Thánh lễ {e(name)}</h2>
+    </div>
+    <div class="sched-card">
+{body}
+    </div>
+{f'    <p class="sched-note">{e(note)}</p>' + chr(10) if note else ""}  </div>
+</section>{chr(10) + '<script src="../assets/church.js" defer></script>' if has_schedule(church) else ""}"""
+
+
 def church_page(church, parts):
     name, addr = full_name(church), church["address"]
+    cta = "Tải ứng dụng" if has_schedule(church) else "Tải ứng dụng để Xem giờ lễ"
+    # Without a schedule the CTA itself says "để Xem giờ lễ"; a jump button would only reach the empty notice.
+    see_times = '          <a class="btn-outline" href="#gio-le">Xem giờ lễ</a>\n' if has_schedule(church) else ""
     title = f"Giờ Lễ {name} - {addr}"
     # Pages without mass times are thin: keep them out of Google until a schedule exists.
     out = head(title, describe(church), page_url(church), json_ld(church), noindex=not has_schedule(church))
@@ -333,11 +448,13 @@ def church_page(church, parts):
         <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Trang chủ</a><span>›</span><span>{e(church["province"])}</span></nav>
         <span class="hero-eyebrow">{e(eyebrow)}</span>
         <h1>Giờ Lễ {e(name)}</h1>
-        <p class="hero-addr">{PIN_ICON}<span>{e(addr)}</span></p>
-        <div class="hero-actions">
-          <a class="btn" href="{PLAY_URL}" target="_blank" rel="noopener">{DL_ICON} Tải ứng dụng để Xem giờ lễ</a>
-          <a class="btn-outline" href="{e(maps_url(church))}" target="_blank" rel="noopener">Chỉ đường</a>
+        <div class="hero-addr-row">
+          <p class="hero-addr">{PIN_ICON}<span>{e(addr)}</span></p>
+          <a class="addr-dir" href="{e(maps_url(church))}" target="_blank" rel="noopener">Chỉ đường</a>
         </div>
+        <div class="hero-actions">
+          <a class="btn" href="{PLAY_URL}" target="_blank" rel="noopener">{DL_ICON} {cta}</a>
+{see_times}        </div>
         <div class="hero-qr">
           <img src="../assets/qr/play-store.svg" alt="Mã QR tải Bước Theo Chân Chúa trên Google Play" width="112" height="112" loading="lazy">
           <span>Quét mã QR để xem giờ lễ<br>và check-in trên điện thoại</span>
@@ -347,6 +464,8 @@ def church_page(church, parts):
     </div>
   </div>
 </header>
+
+{schedule_section(church)}
 
 {parts["features"]}
 
@@ -388,6 +507,7 @@ def main():
 
     css, parts = load_template_parts()
     (ROOT / "assets" / "church.css").write_text(css.strip() + "\n" + EXTRA_CSS, encoding="utf-8")
+    (ROOT / "assets" / "church.js").write_text(SCHEDULE_JS, encoding="utf-8")
 
     if OUT_DIR.exists():
         shutil.rmtree(OUT_DIR)

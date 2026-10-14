@@ -171,10 +171,35 @@
 .crumbs a:hover { color: var(--cream); }
 .hero-addr { display: flex; gap: 10px; align-items: flex-start; font-size: 1.05rem; line-height: 1.55; color: var(--on-dark-dim); max-width: 46ch; }
 .hero-addr svg { flex-shrink: 0; margin-top: 3px; }
+.hero-addr-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+.addr-dir { height: 34px; padding: 0 16px; border-radius: 17px; border: 1.5px solid var(--on-dark-dim); color: var(--cream); display: inline-flex; align-items: center; font-size: .85rem; font-weight: 600; white-space: nowrap; }
+.addr-dir:hover { background: var(--green-mid); opacity: 1; }
+.schedule { padding: 64px 0 32px; }
+.sched-card { max-width: 880px; border-radius: 24px; background: var(--surface); box-shadow: var(--shadow); overflow: hidden; }
+.sched-row { display: grid; grid-template-columns: 132px 1fr; gap: 16px; align-items: start; padding: 16px 24px; border-top: 1px solid var(--border); }
+.sched-row:first-child { border-top: 0; }
+.sched-row.is-sun { background: var(--cream); }
+.sched-day { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; padding-top: 6px; font-weight: 700; color: var(--green-deep); }
+.sched-times { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; min-width: 0; }
+.sched-times li { padding: 6px 14px; border-radius: 16px; background: var(--surface-soft); color: var(--green-deep); font-size: .95rem; font-weight: 600; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.sched-row.is-sun .sched-times li { background: var(--cream-strong); }
+.sched-times li.none { padding-left: 0; padding-right: 0; background: none !important; color: var(--muted); font-weight: 500; }
+.sched-row.is-today { background: var(--green); }
+.sched-row.is-today .sched-day { color: var(--cream); }
+.sched-row.is-today .sched-times li { background: var(--green-mid); color: var(--cream); }
+.sched-row.is-today .sched-times li.none { color: var(--on-dark-dim); }
+.sched-row.is-today .sched-times li.is-past { opacity: .55; }
+.sched-row.is-today .sched-times li.is-next { background: var(--cream-strong); color: var(--green-deep); box-shadow: 0 0 0 3px rgba(246,231,184,.35); }
+.today-badge { padding: 2px 10px; border-radius: 10px; background: var(--cream-strong); color: var(--green-deep); font-size: .72rem; font-weight: 700; letter-spacing: .02em; white-space: nowrap; }
+.sched-empty { padding: 24px; color: var(--text-dim); line-height: 1.6; }
+.sched-note { max-width: 70ch; margin-top: 16px; font-size: .88rem; color: var(--text-dim); }
 @media (max-width: 960px) {
   .hero .phone-wrap { display: none; }
 }
 @media (max-width: 640px) {
   .brand { font-size: .95rem; }
   .hero-qr { display: none; }
+  .schedule { padding: 48px 0 24px; }
+  .sched-row { grid-template-columns: 1fr; gap: 8px; padding: 14px 18px; }
+  .sched-day { padding-top: 0; }
 }
